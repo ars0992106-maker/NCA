@@ -1,0 +1,1429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'SF Pro'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'SF Pro'; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;The Ultimate Depreciation Guide — HKDSE BAFS&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">:root{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--o50:#FFF7ED;--o100:#FFEDD5;--o200:#FED7AA;--o300:#FDBA74;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--o400:#FB923C;--o500:#F97316;--o600:#EA580C;--o700:#C2410C;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--n900:#0C0C1D;--n800:#1A1A2E;--n700:#16213E;--n600:#0F3460;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--g50:#FAFAFA;--g100:#F5F5F5;--g200:#E5E5E5;--g300:#D4D4D4;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--g400:#A3A3A3;--g500:#737373;--g600:#525252;--g700:#404040;--g800:#262626;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--green:#22C55E;--green-l:#DCFCE7;--green-d:#15803D;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--red:#EF4444;--red-l:#FEE2E2;--red-d:#B91C1C;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--blue:#3B82F6;--blue-l:#DBEAFE;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--yellow-l:#FEF9C3;--yellow-d:#A16207;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--ff:'Space Grotesk',sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--fb:'Inter',sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--fm:'JetBrains Mono',monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--bw:5px;--side:260px;</p>
+<p class="p1">}</p>
+<p class="p1">*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}</p>
+<p class="p1">html{scroll-behavior:smooth;scroll-padding-top:70px}</p>
+<p class="p1">body{font-family:var(--fb);color:var(--g800);background:var(--g50);line-height:1.7;font-size:15.5px;overflow-x:hidden}</p>
+<p class="p2"><br></p>
+<p class="p1">#prog{position:fixed;top:0;left:0;height:4px;z-index:1001;background:linear-gradient(90deg,var(--o500),var(--o300));width:0%;transition:width .12s}</p>
+<p class="p2"><br></p>
+<p class="p1">.side{position:fixed;top:0;left:0;width:var(--side);height:100vh;background:var(--n800);color:#fff;overflow-y:auto;z-index:900;border-right:var(--bw) solid var(--o500);transition:transform .3s;scrollbar-width:thin;scrollbar-color:var(--o500) var(--n900)}</p>
+<p class="p1">.side::-webkit-scrollbar{width:5px}.side::-webkit-scrollbar-thumb{background:var(--o500);border-radius:3px}</p>
+<p class="p1">.side-hd{padding:18px 16px 12px;border-bottom:2px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between}</p>
+<p class="p1">.side-hd h3{font-family:var(--ff);font-size:.85rem;color:var(--o400);letter-spacing:1px;text-transform:uppercase}</p>
+<p class="p1">.side-x{display:none;background:none;border:none;color:#fff;font-size:1.4rem;cursor:pointer}</p>
+<p class="p1">.side ul{list-style:none;padding:8px 0}</p>
+<p class="p1">.side a{display:block;padding:6px 16px;color:rgba(255,255,255,.65);text-decoration:none;font-size:.8rem;border-left:3px solid transparent;transition:all .15s}</p>
+<p class="p1">.side a:hover,.side a.on{color:#fff;background:rgba(255,255,255,.05);border-left-color:var(--o500)}</p>
+<p class="p1">.side .pt{padding:14px 16px 4px;font-family:var(--ff);font-size:.65rem;color:var(--o400);text-transform:uppercase;letter-spacing:2px;font-weight:700}</p>
+<p class="p1">.ham{display:none;position:fixed;top:10px;left:10px;z-index:950;background:var(--n800);color:#fff;border:3px solid var(--o500);width:42px;height:42px;border-radius:8px;font-size:1.2rem;cursor:pointer;align-items:center;justify-content:center}</p>
+<p class="p2"><br></p>
+<p class="p1">.mn{margin-left:var(--side);min-height:100vh}</p>
+<p class="p2"><br></p>
+<p class="p1">/* HERO */</p>
+<p class="p1">.hero{background:var(--n800);color:#fff;padding:70px 40px 50px;position:relative;overflow:hidden;border-bottom:var(--bw) solid var(--o500)}</p>
+<p class="p1">.hero::before{content:'';position:absolute;top:-120px;right:-80px;width:400px;height:400px;background:var(--o500);opacity:.07;border-radius:50%}</p>
+<p class="p1">.hero::after{content:'';position:absolute;bottom:-60px;left:10%;width:200px;height:200px;background:var(--o400);opacity:.05;transform:rotate(45deg)}</p>
+<p class="p1">.hero .badge{display:inline-block;background:var(--o500);color:#fff;font-family:var(--ff);font-size:.7rem;font-weight:700;padding:3px 12px;border-radius:4px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}</p>
+<p class="p1">.hero h1{font-family:var(--ff);font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:14px;max-width:650px;position:relative;z-index:1}</p>
+<p class="p1">.hero h1 span{color:var(--o400)}</p>
+<p class="p1">.hero .sub{font-size:1rem;color:rgba(255,255,255,.65);max-width:550px;position:relative;z-index:1}</p>
+<p class="p1">.hero .note{margin-top:20px;padding:14px 18px;background:rgba(255,255,255,.05);border-left:4px solid var(--o500);border-radius:0 8px 8px 0;max-width:550px;position:relative;z-index:1;font-size:.88rem;color:rgba(255,255,255,.8)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* SECTIONS */</p>
+<p class="p1">.sec{padding:50px 36px;max-width:880px;margin:0 auto;border-bottom:1px solid var(--g200)}</p>
+<p class="p1">.sec:last-of-type{border-bottom:none}</p>
+<p class="p1">.sec-lab{display:inline-flex;align-items:center;gap:6px;font-family:var(--ff);font-size:.7rem;font-weight:700;color:var(--o600);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}</p>
+<p class="p1">.sec-lab .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--o500);color:#fff;border-radius:5px;font-size:.78rem}</p>
+<p class="p1">.sec h2{font-family:var(--ff);font-size:clamp(1.4rem,3vw,2rem);font-weight:700;color:var(--n800);margin-bottom:20px;line-height:1.25;border-bottom:var(--bw) solid var(--o500);padding-bottom:10px;display:inline-block}</p>
+<p class="p1">.sec h3{font-family:var(--ff);font-size:1.15rem;font-weight:700;color:var(--n800);margin:28px 0 12px;padding-left:14px;border-left:4px solid var(--o500)}</p>
+<p class="p1">.sec h4{font-family:var(--ff);font-size:1rem;font-weight:600;color:var(--g700);margin:20px 0 10px}</p>
+<p class="p1">.sec p{margin-bottom:14px}</p>
+<p class="p1">.sec ul,.sec ol{padding-left:22px;margin-bottom:14px}</p>
+<p class="p1">.sec li{margin-bottom:6px}</p>
+<p class="p2"><br></p>
+<p class="p1">/* CARDS */</p>
+<p class="p1">.cd{background:#fff;border-radius:10px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.05);border:2px solid var(--g200)}</p>
+<p class="p1">.cd.or{border-left:var(--bw) solid var(--o500)}</p>
+<p class="p1">.cd.nv{border-left:var(--bw) solid var(--n800)}</p>
+<p class="p1">.cd.gr{border-left:var(--bw) solid var(--green)}</p>
+<p class="p1">.cd.bl{border-left:var(--bw) solid var(--blue)}</p>
+<p class="p1">.cd.rd{border-left:var(--bw) solid var(--red)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* FORMULA */</p>
+<p class="p1">.fm{background:var(--n800);color:#fff;border-radius:10px;padding:16px 24px;margin:16px 0;border:3px solid var(--o500);font-family:var(--fm);font-size:.9rem}</p>
+<p class="p1">.fm .lb{font-family:var(--ff);font-size:.65rem;font-weight:700;color:var(--o400);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}</p>
+<p class="p2"><br></p>
+<p class="p1">/* KEY CONCEPT */</p>
+<p class="p1">.kc{background:var(--o50);border:3px solid var(--o500);border-radius:10px;padding:18px 22px;margin:16px 0}</p>
+<p class="p1">.kc .tg{display:inline-block;background:var(--o500);color:#fff;font-family:var(--ff);font-size:.65rem;font-weight:700;padding:2px 10px;border-radius:4px;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}</p>
+<p class="p2"><br></p>
+<p class="p1">/* EXAM TRAP */</p>
+<p class="p1">.trap{background:var(--red-l);border:3px solid var(--red);border-radius:10px;padding:18px 22px;margin:16px 0;position:relative}</p>
+<p class="p1">.trap::before{content:'⚠ EXAM TRAP';font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--red-d);letter-spacing:2px;display:block;margin-bottom:6px}</p>
+<p class="p2"><br></p>
+<p class="p1">/* TIP */</p>
+<p class="p1">.tip{background:var(--green-l);border:3px solid var(--green);border-radius:10px;padding:18px 22px;margin:16px 0}</p>
+<p class="p1">.tip::before{content:'💡 PRO TIP';font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--green-d);letter-spacing:2px;display:block;margin-bottom:6px}</p>
+<p class="p2"><br></p>
+<p class="p1">/* COMPARE GRID */</p>
+<p class="p1">.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}</p>
+<p class="p1">.cc{background:#fff;border-radius:10px;padding:18px 20px;border:3px solid var(--g200)}</p>
+<p class="p1">.cc.a{border-color:var(--blue)}.cc.b{border-color:var(--o500)}</p>
+<p class="p1">.cc h4{margin-top:0}</p>
+<p class="p2"><br></p>
+<p class="p1">/* TABLES */</p>
+<p class="p1">table.dt{width:100%;border-collapse:collapse;margin:14px 0;font-size:.87rem;background:#fff;border-radius:8px;overflow:hidden;border:2px solid var(--g200)}</p>
+<p class="p1">table.dt th{background:var(--n800);color:#fff;padding:9px 12px;text-align:left;font-family:var(--ff);font-weight:600;font-size:.82rem}</p>
+<p class="p1">table.dt td{padding:9px 12px;border-bottom:1px solid var(--g200)}</p>
+<p class="p1">table.dt tr:last-child td{border-bottom:none}</p>
+<p class="p1">table.dt tr:nth-child(even){background:var(--g50)}</p>
+<p class="p1">.ar{text-align:right;font-family:var(--fm)}</p>
+<p class="p1">.tot{font-weight:700;border-top:3px double var(--g400)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* JOURNAL */</p>
+<p class="p1">.jb{background:#fff;border:3px solid var(--n800);border-radius:10px;overflow:hidden;margin:16px 0}</p>
+<p class="p1">.jb .jt{background:var(--n800);color:#fff;padding:9px 18px;font-family:var(--ff);font-weight:700;font-size:.88rem}</p>
+<p class="p1">table.jj{width:100%;border-collapse:collapse;font-size:.85rem}</p>
+<p class="p1">table.jj th{padding:7px 12px;text-align:left;background:var(--g100);border-bottom:2px solid var(--g300);font-weight:600;font-size:.78rem}</p>
+<p class="p1">table.jj td{padding:7px 12px;border-bottom:1px solid var(--g100);vertical-align:top}</p>
+<p class="p1">.ind{padding-left:32px!important}</p>
+<p class="p1">.am{text-align:right;font-family:var(--fm);white-space:nowrap}</p>
+<p class="p1">.nt{color:var(--g500);font-size:.78rem;font-style:italic}</p>
+<p class="p2"><br></p>
+<p class="p1">/* T-ACCOUNT */</p>
+<p class="p1">.ta{background:#fff;border:3px solid var(--g300);border-radius:10px;overflow:hidden;margin:16px 0}</p>
+<p class="p1">.ta .tt{text-align:center;padding:7px;font-family:var(--ff);font-weight:700;background:var(--g100);border-bottom:3px solid var(--g400);font-size:.9rem}</p>
+<p class="p1">.ta .tb{display:flex;min-height:60px}</p>
+<p class="p1">.ta .tl,.ta .tr{flex:1;padding:7px 9px;font-size:.8rem}</p>
+<p class="p1">.ta .tl{border-right:3px solid var(--g400)}</p>
+<p class="p1">.ta .tw{display:grid;grid-template-columns:auto 1fr auto;gap:5px;padding:2px 0;align-items:baseline}</p>
+<p class="p1">.ta .td{color:var(--g500);font-size:.75rem;white-space:nowrap}</p>
+<p class="p1">.ta .tn{font-size:.8rem}</p>
+<p class="p1">.ta .tv{text-align:right;font-family:var(--fm);font-weight:600;font-size:.8rem;white-space:nowrap}</p>
+<p class="p1">.ta .to{border-top:3px double var(--g400);padding-top:3px;margin-top:3px;text-align:right;font-family:var(--fm);font-weight:700;font-size:.8rem}</p>
+<p class="p1">.ta .tg{height:16px}</p>
+<p class="p2"><br></p>
+<p class="p1">/* FINANCIAL STATEMENT */</p>
+<p class="p1">.fs{background:#fff;border:3px solid var(--n800);border-radius:10px;overflow:hidden;margin:16px 0}</p>
+<p class="p1">.fs .fh{background:var(--n800);color:#fff;padding:10px 18px;text-align:center}</p>
+<p class="p1">.fs .fh h4{font-family:var(--ff);margin:0;font-size:.9rem;color:#fff}</p>
+<p class="p1">.fs .fh h5{font-weight:400;font-size:.78rem;color:rgba(255,255,255,.65);margin:2px 0 0}</p>
+<p class="p1">.fs .fy{padding:14px 18px;font-size:.85rem}</p>
+<p class="p1">.fs .fr{display:flex;justify-content:space-between;padding:3px 0}</p>
+<p class="p1">.fs .i1{padding-left:22px}.fs .i2{padding-left:44px}</p>
+<p class="p1">.fs .ft{font-weight:700;border-top:2px solid var(--g300);padding-top:6px;margin-top:3px}</p>
+<p class="p1">.fs .st{font-weight:600}</p>
+<p class="p1">.fs .dl{border-top:3px double var(--g400)}</p>
+<p class="p1">.fs .fa{font-family:var(--fm);white-space:nowrap}</p>
+<p class="p1">.fs .c2{min-width:70px;text-align:right}.fs .c3{min-width:70px;text-align:right;font-weight:600}</p>
+<p class="p1">.fs .fhd{font-weight:700;margin:10px 0 3px;font-size:.88rem;text-decoration:underline}</p>
+<p class="p2"><br></p>
+<p class="p1">/* QUIZ */</p>
+<p class="p1">.qz{background:var(--o50);border:3px solid var(--o400);border-radius:10px;padding:20px;margin:20px 0}</p>
+<p class="p1">.qz .ql{font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--o600);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}</p>
+<p class="p1">.qz .qt{font-weight:600;margin-bottom:12px;font-size:.95rem}</p>
+<p class="p1">.qz .qo{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}</p>
+<p class="p1">.qb{padding:9px 18px;border:3px solid var(--g300);border-radius:8px;background:#fff;cursor:pointer;font-family:var(--fb);font-weight:600;font-size:.87rem;transition:all .15s}</p>
+<p class="p1">.qb:hover:not(:disabled){border-color:var(--o500);background:var(--o50)}</p>
+<p class="p1">.qb.ok{border-color:var(--green)!important;background:var(--green-l)!important;color:var(--green-d)!important}</p>
+<p class="p1">.qb.no{border-color:var(--red)!important;background:var(--red-l)!important;color:var(--red-d)!important}</p>
+<p class="p1">.qb:disabled{cursor:default;opacity:.65}</p>
+<p class="p1">.qf{padding:9px 12px;border-radius:8px;font-size:.87rem;display:none;margin-top:6px}</p>
+<p class="p1">.qf.s{display:block}.qf.okf{background:var(--green-l);color:var(--green-d);border:2px solid var(--green)}.qf.nof{background:var(--red-l);color:var(--red-d);border:2px solid var(--red)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* CALC QUIZ */</p>
+<p class="p1">.cq{background:#fff;border:3px solid var(--n800);border-radius:10px;padding:20px;margin:20px 0}</p>
+<p class="p1">.cq .ql{font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--n800);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}</p>
+<p class="p1">.ci{display:flex;align-items:center;gap:7px;margin:10px 0;flex-wrap:wrap}</p>
+<p class="p1">.ci span{font-weight:700;font-size:1.05rem}</p>
+<p class="p1">.ci input{width:140px;padding:9px 12px;border:3px solid var(--g300);border-radius:8px;font-family:var(--fm);font-size:.95rem;outline:none;transition:border-color .15s}</p>
+<p class="p1">.ci input:focus{border-color:var(--o500)}</p>
+<p class="p1">.ci button{padding:9px 18px;background:var(--o500);color:#fff;border:none;border-radius:8px;font-family:var(--ff);font-weight:700;font-size:.82rem;cursor:pointer;transition:background .15s}</p>
+<p class="p1">.ci button:hover{background:var(--o600)}</p>
+<p class="p1">.cf{padding:9px 12px;border-radius:8px;font-size:.87rem;margin-top:6px;display:none}</p>
+<p class="p1">.cf.s{display:block}.cf.ok{background:var(--green-l);color:var(--green-d);border:2px solid var(--green)}.cf.no{background:var(--red-l);color:var(--red-d);border:2px solid var(--red)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* REVEAL */</p>
+<p class="p1">.rv{margin:16px 0}</p>
+<p class="p1">.rb{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:var(--n800);color:#fff;border:3px solid var(--o500);border-radius:8px;font-family:var(--ff);font-weight:700;font-size:.82rem;cursor:pointer;transition:all .15s}</p>
+<p class="p1">.rb:hover{background:var(--o500)}</p>
+<p class="p1">.rc{display:none;margin-top:10px;padding:16px;background:var(--g100);border-radius:10px;border:2px solid var(--g300);animation:fi .25s ease}</p>
+<p class="p1">.rc.s{display:block}</p>
+<p class="p1">@keyframes fi{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}</p>
+<p class="p2"><br></p>
+<p class="p1">/* STATEMENT CALC */</p>
+<p class="p1">.sc{background:#fff;border:2px solid var(--g300);border-radius:10px;padding:18px;margin:14px 0;font-size:.87rem}</p>
+<p class="p1">.sc .st{font-family:var(--ff);font-weight:700;text-align:center;margin-bottom:10px}</p>
+<p class="p1">.sc .sr{display:flex;justify-content:space-between;padding:3px 0}</p>
+<p class="p1">.sc .sr.t{border-top:2px solid var(--g400);font-weight:700;margin-top:3px;padding-top:6px}</p>
+<p class="p2"><br></p>
+<p class="p1">/* UTILITY */</p>
+<p class="p1">.hl{background:var(--o100);padding:1px 5px;border-radius:3px;font-weight:600}</p>
+<p class="p1">.mono{font-family:var(--fm)}</p>
+<p class="p1">strong{color:var(--n800)}</p>
+<p class="p1">.sep{height:3px;background:linear-gradient(90deg,var(--o500),var(--o200),transparent);border:none;margin:32px 0;border-radius:2px}</p>
+<p class="p1">.el{display:inline-block;background:var(--o500);color:#fff;font-family:var(--ff);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:5px 5px 0 0;letter-spacing:1px}</p>
+<p class="p1">.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}</p>
+<p class="p2"><br></p>
+<p class="p1">@media(max-width:900px){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.side{transform:translateX(-100%)}.side.open{transform:translateX(0)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ham{display:flex}.side-x{display:block}.mn{margin-left:0}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sec{padding:32px 18px}.hero{padding:50px 18px 36px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cg,.two{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ta .tb{flex-direction:column}.ta .tl{border-right:none;border-bottom:3px solid var(--g400)}</p>
+<p class="p1">}</p>
+<p class="p1">@media(max-width:500px){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.qz .qo{flex-direction:column}.ci{flex-direction:column;align-items:flex-start}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero h1{font-size:1.6rem}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="prog"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;button class="ham" id="ham" onclick="toggleSide()"&gt;☰&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;nav class="side" id="side"&gt;</p>
+<p class="p1">&lt;div class="side-hd"&gt;&lt;h3&gt;📘 Contents&lt;/h3&gt;&lt;button class="side-x" onclick="toggleSide()"&gt;✕&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;ul&gt;</p>
+<p class="p1">&lt;li class="pt"&gt;Part 1 · Foundations&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s1"&gt;1. Non-Current Assets&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s2"&gt;2. Capital vs Revenue&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s3"&gt;3. Why Depreciation?&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s4"&gt;4. Key Terms&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="pt"&gt;Part 2 · Methods&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s5"&gt;5. Straight-Line&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s6"&gt;6. Reducing Balance&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s7"&gt;7. Usage-Based&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s8"&gt;8. Choosing a Method&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="pt"&gt;Part 3 · Real Situations&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s9"&gt;9. Time Apportionment&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s10"&gt;10. Special Cases&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="pt"&gt;Part 4 · Recording&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s11"&gt;11. Double Entry&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s12"&gt;12. Ledger &amp; Financial Stmts&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="pt"&gt;Part 5 · Advanced&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s13"&gt;13. Improvements to NCAs&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="pt"&gt;Part 6 · Disposal&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s14"&gt;14. Disposal Basics&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s15"&gt;15. Disposal Entries&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s16"&gt;16. Trade-In Disposal&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a href="#s17"&gt;17. Grand Finale&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="mn"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ========== HERO ========== --&gt;</p>
+<p class="p1">&lt;header class="hero"&gt;</p>
+<p class="p1">&lt;div class="badge"&gt;HKDSE BAFS · Chapter 11&lt;/div&gt;</p>
+<p class="p1">&lt;h1&gt;The Ultimate Guide to &lt;span&gt;Depreciation&lt;/span&gt; of Non-Current Assets&lt;/h1&gt;</p>
+<p class="p1">&lt;p class="sub"&gt;From zero to mastery. Every concept built from the ground up — so clearly that you'll crush the hardest exam questions.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="note"&gt;&lt;strong&gt;2025-2026:&lt;/strong&gt; Specifically optimised for HKDSE! &lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 1 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s1"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;1&lt;/span&gt; FOUNDATIONS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Non-Current Assets&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;Your bakery buys &lt;strong&gt;flour&lt;/strong&gt; — it's gone within a week. It also buys an &lt;strong&gt;oven&lt;/strong&gt; — that stays for years. The oven is a &lt;strong&gt;non-current asset&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;Definition&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Non-current assets (NCAs)&lt;/strong&gt; = assets held &lt;strong&gt;longer than one year&lt;/strong&gt; to help the business earn money. They are &lt;em&gt;not&lt;/em&gt; intended to be turned into cash quickly.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt; 🚐 Motor vehicles · 🏢 Premises · 🖥️ Equipment · ⚙️ Machinery · 🪑 Furniture&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;The big question: if an NCA helps you earn money for &lt;em&gt;5 years&lt;/em&gt;, should you record its entire cost as an expense in Year 1? That feels unfair. This is why we need &lt;strong&gt;depreciation&lt;/strong&gt; — but first, let's figure out what "cost" actually means.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;What Goes Into the "Cost" of an NCA?&lt;/h3&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;Under the &lt;strong&gt;historical cost principle&lt;/strong&gt;, assets are recorded at their &lt;strong&gt;actual acquisition cost&lt;/strong&gt;. But not every dollar spent &lt;em&gt;around&lt;/em&gt; an asset counts. We split all spending into two categories:&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="qz" id="q1a"&gt;</p>
+<p class="p1">&lt;div class="ql"&gt;Quick Check&lt;/div&gt;</p>
+<p class="p1">&lt;p class="qt"&gt;A bakery buys a delivery van for $80,000. Is this a non-current asset?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="qo"&gt;</p>
+<p class="p1">&lt;button class="qb" onclick="quiz(this,'q1a',1)"&gt;Yes — long-term benefit&lt;/button&gt;</p>
+<p class="p1">&lt;button class="qb" onclick="quiz(this,'q1a',0)"&gt;No — too expensive&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="qf" id="q1a-f"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 2 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s2"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;2&lt;/span&gt; FOUNDATIONS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Capital vs Revenue Expenditure&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cg"&gt;</p>
+<p class="p1">&lt;div class="cc a"&gt;</p>
+<p class="p1">&lt;h4&gt;💎 Capital Expenditure 資本支出&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Long-term benefit.&lt;/strong&gt; Added to the NCA cost on the SFP.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;em&gt;"This spending creates or improves something lasting."&lt;/em&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cc b"&gt;</p>
+<p class="p1">&lt;h4&gt;🔥 Revenue Expenditure 收益支出&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Short-term benefit only.&lt;/strong&gt; Expensed in the Income Statement now.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;em&gt;"This spending is used up — it won't benefit next year."&lt;/em&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Case 1: Buying a NEW NCA&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Capital&lt;/strong&gt; = purchase price + anything needed to bring the NCA to its &lt;strong&gt;location and condition for use&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;The Golden Rule&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Ask: &lt;strong&gt;"Without this spending, could the asset actually be used?"&lt;/strong&gt;&lt;br&gt;NO → Capital. YES → Revenue.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Revenue&lt;/strong&gt; clues: repeating payments (annual insurance), consumables (petrol, electricity).&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;div class="el"&gt;EXAMPLE&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Classifying motor van expenditures:&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Expenditure&lt;/th&gt;&lt;th&gt;Cap?&lt;/th&gt;&lt;th&gt;Rev?&lt;/th&gt;&lt;th&gt;Reason&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Purchase cost&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--blue)"&gt;✓&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Core price&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Legal costs of acquisition&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--blue)"&gt;✓&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Needed to obtain it&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Petrol&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--o500)"&gt;✓&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Consumable&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Delivery from overseas&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--blue)"&gt;✓&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Brings to location&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Annual insurance&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--o500)"&gt;✓&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Repeating payment&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="sc"&gt;</p>
+<p class="p1">&lt;div class="st"&gt;Cost of the Motor Van&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sr"&gt;&lt;span&gt;Purchase cost&lt;/span&gt;&lt;span class="mono"&gt;$50,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sr"&gt;&lt;span&gt;Legal costs&lt;/span&gt;&lt;span class="mono"&gt;2,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sr"&gt;&lt;span&gt;Delivery cost&lt;/span&gt;&lt;span class="mono"&gt;4,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sr t"&gt;&lt;span&gt;&lt;strong&gt;Cost of motor van&lt;/strong&gt;&lt;/span&gt;&lt;span class="mono"&gt;&lt;strong&gt;$56,000&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Case 2: Spending on EXISTING NCAs&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cg"&gt;</p>
+<p class="p1">&lt;div class="cc a"&gt;</p>
+<p class="p1">&lt;h4&gt;Capital ✓&lt;/h4&gt;</p>
+<p class="p1">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Improves&lt;/strong&gt; function (better than before)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Extends&lt;/strong&gt; useful life&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cc b"&gt;</p>
+<p class="p1">&lt;h4&gt;Revenue ✓&lt;/h4&gt;</p>
+<p class="p1">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Restores&lt;/strong&gt; function (back to normal)&lt;/li&gt;&lt;li&gt;Regular maintenance/repairs&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;div class="el"&gt;EXAMPLE — EXISTING VAN&lt;/div&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Expenditure&lt;/th&gt;&lt;th&gt;Cap?&lt;/th&gt;&lt;th&gt;Rev?&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Replace broken seat belt&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--o500)"&gt;✓&lt;/strong&gt; restore&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Replace oil tank with bigger one&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--blue)"&gt;✓&lt;/strong&gt; improve&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Repaint company logo&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--o500)"&gt;✓&lt;/strong&gt; restore&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;New filter extending life by 1 year&lt;/td&gt;&lt;td&gt;&lt;strong style="color:var(--blue)"&gt;✓&lt;/strong&gt; extends life&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Case 3: General Services&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Rent, salaries, utilities → always &lt;strong&gt;revenue expenditure&lt;/strong&gt;. Not related to creating/improving any NCA.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="trap"&gt;</p>
+<p class="p1">&lt;h4&gt;Repairs on a NEWLY-BOUGHT second-hand asset&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;Repairing a broken engine &lt;em&gt;before first use&lt;/em&gt; → &lt;strong class="hl"&gt;CAPITAL&lt;/strong&gt; (needed to bring it to working condition).&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Repairing a breakdown &lt;em&gt;during daily use&lt;/em&gt; → &lt;strong&gt;Revenue&lt;/strong&gt; (just restoring it).&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="trap"&gt;</p>
+<p class="p1">&lt;h4&gt;Insurance&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;Insurance &lt;em&gt;during transit&lt;/em&gt; of new asset → &lt;strong class="hl"&gt;CAPITAL&lt;/strong&gt; (without it, delivery won't happen).&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Annual insurance &lt;em&gt;during normal use&lt;/em&gt; → &lt;strong&gt;Revenue&lt;/strong&gt; (machine works fine without it).&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="qz" id="q2a"&gt;&lt;div class="ql"&gt;Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p class="qt"&gt;A food store installs theft detection equipment. Capital or revenue?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="qo"&gt;&lt;button class="qb" onclick="quiz(this,'q2a',1)"&gt;Capital&lt;/button&gt;&lt;button class="qb" onclick="quiz(this,'q2a',0)"&gt;Revenue&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="qf" id="q2a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="qz" id="q2b"&gt;&lt;div class="ql"&gt;Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p class="qt"&gt;Roof repairs on a store. Capital or revenue?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="qo"&gt;&lt;button class="qb" onclick="quiz(this,'q2b',0)"&gt;Capital&lt;/button&gt;&lt;button class="qb" onclick="quiz(this,'q2b',1)"&gt;Revenue&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="qf" id="q2b-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="qz" id="q2c"&gt;&lt;div class="ql"&gt;Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p class="qt"&gt;Extension of an existing factory building. Capital or revenue?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="qo"&gt;&lt;button class="qb" onclick="quiz(this,'q2c',1)"&gt;Capital&lt;/button&gt;&lt;button class="qb" onclick="quiz(this,'q2c',0)"&gt;Revenue&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="qf" id="q2c-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="qz" id="q2d"&gt;&lt;div class="ql"&gt;Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p class="qt"&gt;Legal cost of obtaining a mortgage loan for a new property. Capital or revenue?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="qo"&gt;&lt;button class="qb" onclick="quiz(this,'q2d',1)"&gt;Capital&lt;/button&gt;&lt;button class="qb" onclick="quiz(this,'q2d',0)"&gt;Revenue&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="qf" id="q2d-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Calculate&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Machine cost $50,000. Import duty $5,000. Landing charges $2,000. Installation $1,000. Maintenance contract $800/year. &lt;strong&gt;What cost is capitalised?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c2a"&gt;&lt;button onclick="calc('c2a',58000)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c2a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 3 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s3"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;3&lt;/span&gt; FOUNDATIONS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Why Depreciation?&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;You buy a van for &lt;strong&gt;$60,000&lt;/strong&gt;, useful for 5 years. If you expense it all in Year 1:&lt;/p&gt;</p>
+<p class="p1">&lt;ul&gt;</p>
+<p class="p1">&lt;li&gt;Year 1: profit looks terrible (huge expense, but van only helped &lt;em&gt;part&lt;/em&gt; of the time)&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Years 2–5: you're using the van for free in your accounts. Not fair!&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;Matching Principle 相配原則&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Expenses must be matched to the &lt;strong&gt;same period&lt;/strong&gt; as the revenue they generate. Van helps earn money for 5 years → spread its cost over 5 years.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;Definition&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Depreciation&lt;/strong&gt; = the &lt;strong&gt;systematic allocation&lt;/strong&gt; of the depreciable amount of an NCA over its estimated useful life.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;em&gt;Plain English: spreading the "used up" cost across all the years the asset works for you.&lt;/em&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;What Causes It?&lt;/h3&gt;</p>
+<p class="p1">&lt;ol&gt;</p>
+<p class="p1">&lt;li&gt;&lt;strong&gt;Physical wear &amp;amp; tear&lt;/strong&gt; — gets old from use&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;strong&gt;Obsolescence&lt;/strong&gt; — new technology makes it outdated&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;strong&gt;Inadequacy&lt;/strong&gt; — business grows, asset is no longer enough&lt;/li&gt;</p>
+<p class="p1">&lt;/ol&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="tip"&gt;Depreciation ≠ market value drop. A building may rise in market value, but we still depreciate it — we're allocating cost, not tracking value.&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 4 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s4"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;4&lt;/span&gt; FOUNDATIONS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Key Terms&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Term&lt;/th&gt;&lt;th&gt;Meaning&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Cost&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Total capital expenditure to acquire the NCA&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Residual Value&lt;/strong&gt;&lt;br&gt;(Scrap / Salvage Value)&lt;/td&gt;&lt;td&gt;Amount expected when sold/scrapped at end of useful life. If not stated → assume $0&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Depreciable Amount&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;The portion that gets "used up"&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Estimated Useful Life&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;How many years (or units) the business expects to use it&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Accumulated Depreciation&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Total depreciation charged from purchase to a specific date (grows each year)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Net Book Value (NBV)&lt;/strong&gt;&lt;br&gt;(Carrying Amount)&lt;/td&gt;&lt;td&gt;What's "left" on the books at a specific date&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="fm"&gt;</p>
+<p class="p1">&lt;div class="lb"&gt;Key Formulas&lt;/div&gt;</p>
+<p class="p1">&lt;strong&gt;Depreciable Amount = Cost − Residual Value&lt;/strong&gt;&lt;br&gt;</p>
+<p class="p1">&lt;strong&gt;Net Book Value = Cost − Accumulated Depreciation&lt;/strong&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd nv" style="overflow-x:auto"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Machine: cost $10,000 · residual $2,000 · 4-year life&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Depreciable amount = $8,000 → Annual dep = $2,000&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year End&lt;/th&gt;&lt;th&gt;Annual Dep.&lt;/th&gt;&lt;th&gt;Acc. Dep.&lt;/th&gt;&lt;th&gt;NBV&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Start&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td class="ar"&gt;$0&lt;/td&gt;&lt;td class="ar"&gt;$10,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Yr 1&lt;/td&gt;&lt;td class="ar"&gt;$2,000&lt;/td&gt;&lt;td class="ar"&gt;$2,000&lt;/td&gt;&lt;td class="ar"&gt;$8,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Yr 2&lt;/td&gt;&lt;td class="ar"&gt;$2,000&lt;/td&gt;&lt;td class="ar"&gt;$4,000&lt;/td&gt;&lt;td class="ar"&gt;$6,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Yr 3&lt;/td&gt;&lt;td class="ar"&gt;$2,000&lt;/td&gt;&lt;td class="ar"&gt;$6,000&lt;/td&gt;&lt;td class="ar"&gt;$4,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Yr 4&lt;/td&gt;&lt;td class="ar"&gt;$2,000&lt;/td&gt;&lt;td class="ar"&gt;$8,000&lt;/td&gt;&lt;td class="ar"&gt;$2,000 ✓&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;p style="margin:0"&gt;NBV at end = residual value. Perfect! ✅&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 5 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s5"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;5&lt;/span&gt; METHODS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Straight-Line Method&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;Concept&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Asset generates benefits &lt;strong&gt;evenly&lt;/strong&gt; → charge the &lt;strong&gt;same depreciation every year&lt;/strong&gt;. Like cutting a pizza into equal slices.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="fm"&gt;&lt;div class="lb"&gt;Formulas&lt;/div&gt;</p>
+<p class="p1">&lt;strong&gt;Annual Dep = (Cost − Residual Value) ÷ Useful Life&lt;/strong&gt;&lt;br&gt;</p>
+<p class="p1">&lt;strong&gt;Annual Dep = (Cost − Residual Value) × Rate&lt;/strong&gt;&lt;br&gt;</p>
+<p class="p1">&lt;span style="color:var(--o300)"&gt;Rate = 100% ÷ Useful Life (e.g. 5 years → 20%)&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="tip"&gt;Exam clue: "X% &lt;strong&gt;on cost&lt;/strong&gt;" = straight-line method.&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Example 1: Life &amp;amp; Residual Given&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;1 Jan 2022: Motor vehicle $6,500. Life: 5 years. Scrap: $500. Straight-line. Year end: 31 Dec.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Annual dep&lt;/strong&gt; = ($6,500 − $500) ÷ 5 = &lt;strong&gt;$1,200&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;31 December&lt;/th&gt;&lt;th&gt;Acc. Dep.&lt;/th&gt;&lt;th&gt;NBV&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2022&lt;/td&gt;&lt;td class="ar"&gt;$1,200&lt;/td&gt;&lt;td class="ar"&gt;$5,300&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2023&lt;/td&gt;&lt;td class="ar"&gt;$2,400&lt;/td&gt;&lt;td class="ar"&gt;$4,100&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2024&lt;/td&gt;&lt;td class="ar"&gt;$3,600&lt;/td&gt;&lt;td class="ar"&gt;$2,900&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2025&lt;/td&gt;&lt;td class="ar"&gt;$4,800&lt;/td&gt;&lt;td class="ar"&gt;$1,700&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2026&lt;/td&gt;&lt;td class="ar"&gt;$6,000&lt;/td&gt;&lt;td class="ar"&gt;$500 ✓&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Income Statement extract (2022):&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;div class="fs"&gt;&lt;div class="fh"&gt;&lt;h4&gt;John&lt;/h4&gt;&lt;h5&gt;Income Statement for year ended 31 Dec 2022 (extract)&lt;/h5&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fy"&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Less: Expenses&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Depreciation: Motor vehicles&lt;/span&gt;&lt;span class="fa c2"&gt;$1,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;SFP extract (2022):&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;div class="fs"&gt;&lt;div class="fh"&gt;&lt;h4&gt;John&lt;/h4&gt;&lt;h5&gt;SFP as at 31 Dec 2022 (extract)&lt;/h5&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fy"&gt;</p>
+<p class="p1">&lt;div class="fhd"&gt;Non-current assets&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Motor vehicles&lt;/span&gt;&lt;span class="fa c2"&gt;$6,500&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Accumulated depreciation&lt;/span&gt;&lt;span class="fa c2"&gt;(1,200)&lt;/span&gt;&lt;span class="fa c3"&gt;$5,300&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Example 2: Rate Given, No Residual&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;&lt;p&gt;Motor vehicle $8,000. 1 Jan 2021. Rate: 25% on cost. No residual mentioned → $0.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Annual dep = $8,000 × 25% = &lt;strong&gt;$2,000&lt;/strong&gt;. Life = 100% ÷ 25% = 4 years.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice 1&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Equipment $12,500. Life: 4 years. Residual: $5,120. Straight-line. &lt;strong&gt;Annual depreciation?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c5a"&gt;&lt;button onclick="calc('c5a',1845)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c5a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice 2&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Machine $38,000 + delivery $2,000. Scrap $1,250. Rate: 20% on cost. &lt;strong&gt;Annual depreciation?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c5b"&gt;&lt;button onclick="calc('c5b',7750)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c5b-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 6 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s6"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;6&lt;/span&gt; METHODS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Reducing-Balance Method&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;Concept&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Apply the rate to the &lt;strong&gt;net book value&lt;/strong&gt; (not cost) each year. Since NBV shrinks, depreciation gets &lt;strong&gt;smaller every year&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="fm"&gt;&lt;div class="lb"&gt;Formula&lt;/div&gt;</p>
+<p class="p1">&lt;strong&gt;Depreciation = (Cost − Acc. Dep.) × Rate = NBV × Rate&lt;/strong&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="trap"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;IGNORE the residual value in the calculation.&lt;/strong&gt; Just apply rate × NBV. The residual value is NOT subtracted from cost first (unlike straight-line).&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="tip"&gt;Exam clue: "X% on &lt;strong&gt;net book value&lt;/strong&gt;" or "on &lt;strong&gt;reducing/diminishing balance&lt;/strong&gt;" = this method.&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Worked Example&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;&lt;p&gt;Machine $8,000. 1 Jan 2020. Residual: $1,000. Rate: 20% on NBV.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;NBV start&lt;/th&gt;&lt;th&gt;× 20%&lt;/th&gt;&lt;th&gt;= Depreciation&lt;/th&gt;&lt;th&gt;Acc. Dep.&lt;/th&gt;&lt;th&gt;NBV end&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2020&lt;/td&gt;&lt;td class="ar"&gt;$8,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$1,600&lt;/strong&gt;&lt;/td&gt;&lt;td class="ar"&gt;$1,600&lt;/td&gt;&lt;td class="ar"&gt;$6,400&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2021&lt;/td&gt;&lt;td class="ar"&gt;$6,400&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$1,280&lt;/strong&gt;&lt;/td&gt;&lt;td class="ar"&gt;$2,880&lt;/td&gt;&lt;td class="ar"&gt;$5,120&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2022&lt;/td&gt;&lt;td class="ar"&gt;$5,120&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$1,024&lt;/strong&gt;&lt;/td&gt;&lt;td class="ar"&gt;$3,904&lt;/td&gt;&lt;td class="ar"&gt;$4,096&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;p&gt;Pattern: $1,600 → $1,280 → $1,024 — decreasing! ✅&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Equipment $12,500. Reducing balance 20%. &lt;strong&gt;Depreciation for 2020?&lt;/strong&gt; (Year 2, bought 1 Jan 2019)&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c6a"&gt;&lt;button onclick="calc('c6a',2000)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c6a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Car $64,000. Rate: 50% diminishing balance. &lt;strong&gt;Depreciation for 2021?&lt;/strong&gt; (Bought 1 Jan 2018)&lt;/p&gt;</p>
+<p class="p1">&lt;p style="font-size:.82rem;color:var(--g500)"&gt;2018: 32,000 → 2019: 16,000 → 2020: 8,000 → 2021: ?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c6b"&gt;&lt;button onclick="calc('c6b',4000)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c6b-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 7 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s7"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;7&lt;/span&gt; METHODS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Usage-Based Method&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;Concept&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Depreciation based on &lt;strong&gt;actual usage&lt;/strong&gt; (units produced, hours, km) rather than time.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="fm"&gt;&lt;div class="lb"&gt;Formula&lt;/div&gt;</p>
+<p class="p1">&lt;strong&gt;Dep = (Cost − Residual) × (Actual units this year ÷ Total estimated units)&lt;/strong&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Machine $12,000. Residual $2,000. Total output: 200,000 units.&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;Units&lt;/th&gt;&lt;th&gt;Calculation&lt;/th&gt;&lt;th&gt;Depreciation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2015&lt;/td&gt;&lt;td class="ar"&gt;60,000&lt;/td&gt;&lt;td&gt;$10,000 × 60K/200K&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$3,000&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2016&lt;/td&gt;&lt;td class="ar"&gt;50,000&lt;/td&gt;&lt;td&gt;$10,000 × 50K/200K&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$2,500&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2017&lt;/td&gt;&lt;td class="ar"&gt;30,000&lt;/td&gt;&lt;td&gt;$10,000 × 30K/200K&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$1,500&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Machine $40,000. Scrap $1,250. Total: 200,000 units. 2020 output: 40,000. &lt;strong&gt;Dep for 2020?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c7a"&gt;&lt;button onclick="calc('c7a',7750)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c7a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 8 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s8"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;8&lt;/span&gt; METHODS&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Choosing a Method&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;Match the method to the &lt;strong&gt;pattern of benefits&lt;/strong&gt;:&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Method&lt;/th&gt;&lt;th&gt;Annual Dep Pattern&lt;/th&gt;&lt;th&gt;Best For&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Straight-line&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Same every year&lt;/td&gt;&lt;td&gt;Even benefit (furniture, premises)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Reducing balance&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Decreasing&lt;/td&gt;&lt;td&gt;More useful when new (computers, cars)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Usage-based&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Varies with usage&lt;/td&gt;&lt;td&gt;Wear depends on use (factory machines)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 9 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s9"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;9&lt;/span&gt; REAL WORLD&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Time Apportionment&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;Asset bought mid-year? The exam will tell you which policy to use:&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cg"&gt;</p>
+<p class="p1">&lt;div class="cc a"&gt;</p>
+<p class="p1">&lt;h4&gt;Policy A: Pro-rata (Monthly Basis)&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;Charge proportionally: annual dep × &lt;strong&gt;months available / 12&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;em&gt;Bought 1 April, year end 31 Dec → 9/12&lt;/em&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cc b"&gt;</p>
+<p class="p1">&lt;h4&gt;Policy B: Full Year in Acquisition&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;Full depreciation in year of purchase. &lt;strong&gt;None&lt;/strong&gt; in year of disposal.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Straight-Line + Time&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Machinery $120,000. 1 April 2020. Residual $12,000. Rate: 25% on cost. Year end: 31 Dec.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Full annual dep = ($120,000 − $12,000) × 25% = $27,000&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;Full Year Policy&lt;/th&gt;&lt;th&gt;Pro-rata&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2020&lt;/td&gt;&lt;td class="ar"&gt;$27,000&lt;/td&gt;&lt;td class="ar"&gt;$27,000 × 9/12 = &lt;strong&gt;$20,250&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2021&lt;/td&gt;&lt;td class="ar"&gt;$27,000&lt;/td&gt;&lt;td class="ar"&gt;$27,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Reducing Balance + Time&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Same machine. 20% on NBV. Pro-rata basis.&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;Calculation&lt;/th&gt;&lt;th&gt;Dep&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2020&lt;/td&gt;&lt;td&gt;$120,000 × 20% × &lt;strong&gt;9/12&lt;/strong&gt;&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$18,000&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2021&lt;/td&gt;&lt;td&gt;($120,000 − $18,000) × 20%&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$20,400&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2022&lt;/td&gt;&lt;td&gt;($120,000 − $18,000 − $20,400) × 20%&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$16,320&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="trap"&gt;For reducing balance with pro-rata: only the &lt;em&gt;first year&lt;/em&gt; gets the fraction. After that, the partial first year is already baked into the NBV — just apply the full rate to NBV.&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;MV $200,000. 1 Aug 2020. Residual $5,000. Life: 5 yrs. Pro-rata. &lt;strong&gt;SL dep for 2020?&lt;/strong&gt; (5 months: Aug–Dec)&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c9a"&gt;&lt;button onclick="calc('c9a',16250)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c9a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Same MV, reducing balance 30%, pro-rata. &lt;strong&gt;Dep for 2021?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p style="font-size:.82rem;color:var(--g500)"&gt;2020: $200K × 30% × 5/12 = $25,000. Then 2021: ($200K − $25K) × 30% = ?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c9b"&gt;&lt;button onclick="calc('c9b',52500)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c9b-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 10 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s10"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;10&lt;/span&gt; REAL WORLD&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Special Cases&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;A. From Given Balances&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Given: Premises $120,000. Acc dep $24,000.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;(a) 20% on cost → $120,000 × 20% = &lt;strong&gt;$24,000&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;(b) 10% on NBV → ($120,000 − $24,000) × 10% = &lt;strong&gt;$9,600&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;B. Multiple Groups (Different Purchase Dates)&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Calculate &lt;strong&gt;separately in the year with different history&lt;/strong&gt;, then pool together afterwards.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Van A: $72,000 on 1 Apr 2020. Van B: $45,000 on 1 Jul 2020. Rate: 20% on cost, pro-rata.&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;Van A&lt;/th&gt;&lt;th&gt;Van B&lt;/th&gt;&lt;th&gt;Total&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2020&lt;/td&gt;&lt;td class="ar"&gt;$72K×20%×9/12&lt;/td&gt;&lt;td class="ar"&gt;$45K×20%×6/12&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$15,300&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2021+&lt;/td&gt;&lt;td colspan="2" class="ar"&gt;($72K+$45K)×20% = same&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$23,400&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;For &lt;strong&gt;reducing balance&lt;/strong&gt; with multiple groups: after the first year, combine NBVs and calculate together.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;C. When Does Depreciation Start?&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;Rule&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Depreciation starts when the NCA is &lt;strong&gt;available for use&lt;/strong&gt; — not ordered, not delivered, but &lt;strong&gt;ready to use&lt;/strong&gt; (e.g., assembly/testing complete).&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Ordered 1 Jan → arrived 1 Feb → assembled &amp; tested by &lt;strong&gt;1 March&lt;/strong&gt; → paid 1 April.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Start date: &lt;strong&gt;1 March&lt;/strong&gt;. For year end 31 Dec → 10/12 of annual dep.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;D. Fully Depreciated NCAs&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;Rule&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Once NBV reaches the residual value → &lt;strong&gt;stop depreciating&lt;/strong&gt;. Asset stays on books at residual value until disposal.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Machine $18,000. Zero residual. 6-year life. Dep = $3,000/yr for 2015–2020. Still in use in 2021.&lt;/p&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;2020&lt;/th&gt;&lt;th&gt;2021&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;I/S: Depreciation&lt;/td&gt;&lt;td class="ar"&gt;$3,000&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$0&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;SFP: Machine&lt;/td&gt;&lt;td class="ar"&gt;$18,000&lt;/td&gt;&lt;td class="ar"&gt;$18,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Less: Acc dep&lt;/td&gt;&lt;td class="ar"&gt;(18,000)&lt;/td&gt;&lt;td class="ar"&gt;(18,000)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;NBV&lt;/td&gt;&lt;td class="ar"&gt;$0&lt;/td&gt;&lt;td class="ar"&gt;$0&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 11 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s11"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;11&lt;/span&gt; RECORDING&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Double Entry for Depreciation&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="jb"&gt;&lt;div class="jt"&gt;Annual Depreciation Entry&lt;/div&gt;</p>
+<p class="p1">&lt;table class="jj"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Account&lt;/th&gt;&lt;th&gt;Dr&lt;/th&gt;&lt;th&gt;Cr&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Dec 31&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Depreciation: NCA&lt;/strong&gt; &lt;span class="nt"&gt;[Expense → I/S]&lt;/span&gt;&lt;/td&gt;&lt;td class="am"&gt;X&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;&lt;strong&gt;Accumulated dep: NCA&lt;/strong&gt; &lt;span class="nt"&gt;[Contra asset → SFP]&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;X&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="two"&gt;</p>
+<p class="p1">&lt;div class="cd bl"&gt;</p>
+<p class="p1">&lt;h4&gt;Dr: Depreciation: NCA&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Expense&lt;/strong&gt; account → I/S. This year's cost only. Closed to P&amp;L at year end.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cd gr"&gt;</p>
+<p class="p1">&lt;h4&gt;Cr: Acc. Dep: NCA&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Contra-asset&lt;/strong&gt; → SFP. Accumulates year after year. Balance carries forward.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="tip"&gt;Why not credit the asset directly? Because we want to &lt;strong&gt;keep the original cost visible&lt;/strong&gt;. Showing Cost − Acc Dep = NBV gives users more information.&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 12 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s12"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;12&lt;/span&gt; RECORDING&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Ledger Accounts &amp;amp; Financial Statements&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;Machine: $18,000. Zero residual. 6-year life. SL. Annual dep = &lt;strong&gt;$3,000&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;T-Accounts&lt;/h3&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="ta"&gt;&lt;div class="tt"&gt;Machinery&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tb"&gt;</p>
+<p class="p1">&lt;div class="tl"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2021 Jan 1&lt;/span&gt;&lt;span class="tn"&gt;Cash&lt;/span&gt;&lt;span class="tv"&gt;18,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2022 Jan 1&lt;/span&gt;&lt;span class="tn"&gt;Balance b/d&lt;/span&gt;&lt;span class="tv"&gt;18,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tr"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2021 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Balance c/d&lt;/span&gt;&lt;span class="tv"&gt;18,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2022 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Balance c/d&lt;/span&gt;&lt;span class="tv"&gt;18,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="ta"&gt;&lt;div class="tt"&gt;Depreciation: Machinery&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tb"&gt;</p>
+<p class="p1">&lt;div class="tl"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2021 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Acc dep: Mach&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2022 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Acc dep: Mach&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tr"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2021 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Profit &amp; loss&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2022 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Profit &amp; loss&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="ta"&gt;&lt;div class="tt"&gt;Accumulated Depreciation: Machinery&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tb"&gt;</p>
+<p class="p1">&lt;div class="tl"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2021 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Balance c/d&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2022 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Balance c/d&lt;/span&gt;&lt;span class="tv"&gt;6,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;6,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tr"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2021 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Depreciation&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tg"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2022 Jan 1&lt;/span&gt;&lt;span class="tn"&gt;Balance b/d&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;2022 Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Depreciation&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;6,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Preparing AD Account Mid-Way&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Same machine purchased 1 Jan &lt;strong&gt;2019&lt;/strong&gt;. Prepare AD account for &lt;strong&gt;2022&lt;/strong&gt;:&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Opening balance = $3,000 × 3 years = &lt;strong&gt;$9,000&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="ta"&gt;&lt;div class="tt"&gt;Acc Dep: Machinery (2022)&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tb"&gt;</p>
+<p class="p1">&lt;div class="tl"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Balance c/d&lt;/span&gt;&lt;span class="tv"&gt;12,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;12,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tr"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jan 1&lt;/span&gt;&lt;span class="tn"&gt;Balance b/d&lt;/span&gt;&lt;span class="tv"&gt;9,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Depreciation&lt;/span&gt;&lt;span class="tv"&gt;3,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;12,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="sep"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Full Financial Statement Example&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;&lt;div class="el"&gt;COMPREHENSIVE EXAMPLE&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;John's Trial Balance as at 31 March 2020&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Office equip $150,000 (AD: $30,000) · Furn &amp; fittings $120,000 (AD: $36,000)&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Additional info:&lt;/strong&gt; Closing inv $190,000. Accrued wages $12,000. Prepaid rent $16,000.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Dep: Office equip &lt;strong&gt;20% on cost&lt;/strong&gt;. Furn &amp; fittings &lt;strong&gt;30% on NBV&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Calculations:&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;ul&gt;</p>
+<p class="p1">&lt;li&gt;Office equip: $150,000 × 20% = &lt;strong&gt;$30,000&lt;/strong&gt; (straight-line)&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Furn &amp; fittings: ($120,000 − $36,000) × 30% = &lt;strong&gt;$25,200&lt;/strong&gt; (reducing balance)&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="rv"&gt;</p>
+<p class="p1">&lt;button class="rb" onclick="reveal('r12a')"&gt;👁 Show Income Statement&lt;/button&gt;</p>
+<p class="p1">&lt;div class="rc" id="r12a"&gt;</p>
+<p class="p1">&lt;div class="fs"&gt;&lt;div class="fh"&gt;&lt;h4&gt;John&lt;/h4&gt;&lt;h5&gt;Income Statement for year ended 31 March 2020&lt;/h5&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fy"&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Sales&lt;/span&gt;&lt;span class="fa c3"&gt;1,083,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Less: Cost of goods sold&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Opening inventory&lt;/span&gt;&lt;span class="fa c2"&gt;170,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Add: Purchases&lt;/span&gt;&lt;span class="fa c2"&gt;780,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Returns outwards&lt;/span&gt;&lt;span class="fa c2"&gt;(24,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Closing inventory&lt;/span&gt;&lt;span class="fa c2"&gt;(190,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;(736,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr ft"&gt;&lt;span&gt;Gross profit&lt;/span&gt;&lt;span class="fa c3"&gt;347,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Add: Discount received&lt;/span&gt;&lt;span class="fa c3"&gt;3,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;350,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Less: Expenses&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Wages ($88K + $12K)&lt;/span&gt;&lt;span class="fa c2"&gt;100,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Rent ($96K − $16K)&lt;/span&gt;&lt;span class="fa c2"&gt;80,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Misc. expenses&lt;/span&gt;&lt;span class="fa c2"&gt;5,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Dep: Office equipment&lt;/span&gt;&lt;span class="fa c2"&gt;30,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Dep: Furn &amp; fittings&lt;/span&gt;&lt;span class="fa c2"&gt;25,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;(240,400)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr dl"&gt;&lt;span&gt;&lt;strong&gt;Net profit&lt;/strong&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;&lt;strong&gt;109,800&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="rv"&gt;</p>
+<p class="p1">&lt;button class="rb" onclick="reveal('r12b')"&gt;👁 Show SFP&lt;/button&gt;</p>
+<p class="p1">&lt;div class="rc" id="r12b"&gt;</p>
+<p class="p1">&lt;div class="fs"&gt;&lt;div class="fh"&gt;&lt;h4&gt;John&lt;/h4&gt;&lt;h5&gt;SFP as at 31 March 2020&lt;/h5&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fy"&gt;</p>
+<p class="p1">&lt;div class="fhd"&gt;ASSETS&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fhd" style="font-size:.84rem"&gt;Non-current assets&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Office equipment&lt;/span&gt;&lt;span class="fa c2"&gt;150,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Acc dep ($30K+$30K)&lt;/span&gt;&lt;span class="fa c2"&gt;(60,000)&lt;/span&gt;&lt;span class="fa c3"&gt;90,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Furn &amp; fittings&lt;/span&gt;&lt;span class="fa c2"&gt;120,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Acc dep ($36K+$25.2K)&lt;/span&gt;&lt;span class="fa c2"&gt;(61,200)&lt;/span&gt;&lt;span class="fa c3"&gt;58,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;148,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fhd" style="font-size:.84rem"&gt;Current assets&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Inventory&lt;/span&gt;&lt;span class="fa c3"&gt;190,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Trade receivables&lt;/span&gt;&lt;span class="fa c3"&gt;47,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Prepaid expenses&lt;/span&gt;&lt;span class="fa c3"&gt;16,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Bank&lt;/span&gt;&lt;span class="fa c3"&gt;30,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;283,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr dl"&gt;&lt;span&gt;&lt;strong&gt;Total assets&lt;/strong&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;&lt;strong&gt;432,600&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fhd"&gt;CAPITAL AND LIABILITIES&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Capital — 1 Apr 2019&lt;/span&gt;&lt;span class="fa c2"&gt;300,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Add: Net profit&lt;/span&gt;&lt;span class="fa c2"&gt;109,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Drawings&lt;/span&gt;&lt;span class="fa c2"&gt;(40,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;369,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Trade payables&lt;/span&gt;&lt;span class="fa c2"&gt;50,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Accrued expenses&lt;/span&gt;&lt;span class="fa c2"&gt;12,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;62,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr dl"&gt;&lt;span&gt;&lt;strong&gt;Total capital &amp; liabilities&lt;/strong&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;&lt;strong&gt;432,600&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;SFP Key Formula&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Acc dep on SFP = TB balance + this year's depreciation (from I/S)&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 13 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s13"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;13&lt;/span&gt; ADVANCED&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Improvements to Existing NCAs&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;When &lt;strong&gt;capital expenditure&lt;/strong&gt; is made on an existing NCA (improvement, not just repair):&lt;/p&gt;</p>
+<p class="p1">&lt;ol&gt;</p>
+<p class="p1">&lt;li&gt;&lt;strong&gt;Add&lt;/strong&gt; the improvement cost to the NCA&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;strong&gt;Recalculate&lt;/strong&gt; depreciation for the remaining useful life&lt;/li&gt;</p>
+<p class="p1">&lt;/ol&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="fm"&gt;&lt;div class="lb"&gt;After Improvement (Straight-Line)&lt;/div&gt;</p>
+<p class="p1">&lt;strong&gt;New annual dep = (NBV after improvement − Revised residual value) ÷ Remaining useful life&lt;/strong&gt;&lt;br&gt;</p>
+<p class="p1">&lt;span style="color:var(--o300)"&gt;Where NBV after improvement = old NBV + cost of improvement&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Example 1: Extending Useful Life&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Motor van $60,000. 1 Jan 2021. SL. Life: 4 yrs. Residual: $10,000. Dep = ($60K−$10K)÷4 = &lt;strong&gt;$12,500/yr&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;On &lt;strong&gt;1 Jan 2023&lt;/strong&gt;, $5,000 spent on enhancement. Residual stays $10,000. Life &lt;strong&gt;extended by 1 year&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;Calculation&lt;/th&gt;&lt;th&gt;Dep&lt;/th&gt;&lt;th&gt;Cost&lt;/th&gt;&lt;th&gt;Acc Dep&lt;/th&gt;&lt;th&gt;NBV&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2021&lt;/td&gt;&lt;td&gt;Normal&lt;/td&gt;&lt;td class="ar"&gt;$12,500&lt;/td&gt;&lt;td class="ar"&gt;$60,000&lt;/td&gt;&lt;td class="ar"&gt;$12,500&lt;/td&gt;&lt;td class="ar"&gt;$47,500&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2022&lt;/td&gt;&lt;td&gt;Normal&lt;/td&gt;&lt;td class="ar"&gt;$12,500&lt;/td&gt;&lt;td class="ar"&gt;$60,000&lt;/td&gt;&lt;td class="ar"&gt;$25,000&lt;/td&gt;&lt;td class="ar"&gt;$35,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2023&lt;/td&gt;&lt;td style="font-size:.8rem"&gt;($35K+$5K−$10K)÷(4−2+1)&lt;/td&gt;&lt;td class="ar"&gt;&lt;strong&gt;$10,000&lt;/strong&gt;&lt;/td&gt;&lt;td class="ar"&gt;$65,000&lt;/td&gt;&lt;td class="ar"&gt;$35,000&lt;/td&gt;&lt;td class="ar"&gt;$30,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2024&lt;/td&gt;&lt;td&gt;Same&lt;/td&gt;&lt;td class="ar"&gt;$10,000&lt;/td&gt;&lt;td class="ar"&gt;$65,000&lt;/td&gt;&lt;td class="ar"&gt;$45,000&lt;/td&gt;&lt;td class="ar"&gt;$20,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2025&lt;/td&gt;&lt;td&gt;Same&lt;/td&gt;&lt;td class="ar"&gt;$10,000&lt;/td&gt;&lt;td class="ar"&gt;$65,000&lt;/td&gt;&lt;td class="ar"&gt;$55,000&lt;/td&gt;&lt;td class="ar"&gt;$10,000 ✓&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;How the 2023 depreciation works:&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;ul&gt;</p>
+<p class="p1">&lt;li&gt;NBV before improvement = $35,000&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;+ Improvement = $5,000 → NBV after = $40,000&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Revised residual = $10,000 (unchanged)&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Remaining life = original 4 − 2 used + 1 extended = &lt;strong&gt;3 years&lt;/strong&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;New dep = ($40,000 − $10,000) ÷ 3 = &lt;strong&gt;$10,000&lt;/strong&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Example 2: Change in Residual + Extended Life&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Same van. On 1 Jan 2023, $5,000 spent. Residual &lt;strong&gt;decreased by $2,500&lt;/strong&gt; (now $7,500). Life &lt;strong&gt;extended by 2 years&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;New dep = ($35,000 + $5,000 − $7,500) ÷ (4 − 2 + 2) = $32,500 ÷ 4 = &lt;strong&gt;$8,125&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;NBV at end of 2026 = $65,000 − $25,000 − $8,125×4 = &lt;strong&gt;$7,500&lt;/strong&gt; ✓ (= new residual)&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Example 3: No Change in Residual or Life&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Same van. On 1 Jan 2023, $5,000 spent. Remaining life and residual &lt;strong&gt;unchanged&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;New dep = ($35,000 + $5,000 − $10,000) ÷ (4 − 2) = $30,000 ÷ 2 = &lt;strong&gt;$15,000&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="tip"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Shortcut&lt;/strong&gt; (only when no change in RV or remaining life): treat improvement as a separate NCA with the same remaining life:&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;$12,500 (existing) + $5,000 ÷ 2 (new) = &lt;strong&gt;$15,000&lt;/strong&gt; ✓&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 14 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s14"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;14&lt;/span&gt; DISPOSAL&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Disposal of Non-Current Assets&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;A business may sell an NCA &lt;strong&gt;before, at, or after&lt;/strong&gt; the end of its useful life. The key idea:&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;Core Concept&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Profit on disposal&lt;/strong&gt; = Proceeds &amp;gt; NBV → goes to I/S as other revenue&lt;br&gt;</p>
+<p class="p1">&lt;strong&gt;Loss on disposal&lt;/strong&gt; = Proceeds &amp;lt; NBV → goes to I/S as expense&lt;/p&gt;</p>
+<p class="p1">&lt;p class="mono" style="margin:8px 0 0"&gt;NBV at disposal = Cost − Acc. Depreciation to disposal date&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;We use a temporary &lt;strong&gt;Disposal account&lt;/strong&gt; to bring everything together.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;4 Steps of Disposal&lt;/h3&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Step&lt;/th&gt;&lt;th&gt;What&lt;/th&gt;&lt;th&gt;Dr&lt;/th&gt;&lt;th&gt;Cr&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Transfer cost out&lt;/td&gt;&lt;td&gt;Disposal&lt;/td&gt;&lt;td&gt;NCA (at cost)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Transfer acc dep out&lt;/td&gt;&lt;td&gt;Acc dep: NCA&lt;/td&gt;&lt;td&gt;Disposal&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Record proceeds&lt;/td&gt;&lt;td&gt;Cash/Bank/Receivable&lt;/td&gt;&lt;td&gt;Disposal&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Balance = profit or loss&lt;/td&gt;&lt;td&gt;Loss on disposal &lt;em&gt;OR&lt;/em&gt;&lt;/td&gt;&lt;td&gt;Disposal&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Disposal&lt;/td&gt;&lt;td&gt;Profit on disposal&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Worked Example&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Motor van cost $60,000. Bought 1 Jul 2018. Life: 4 years. Scrap: $12,000. SL. Year end: 31 Dec.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Annual dep = ($60K − $12K) ÷ 4 = $12,000&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Acc dep at 1 Jan 2020 = $12,000 × 1.5 years = &lt;strong&gt;$18,000&lt;/strong&gt;. NBV = $42,000.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h4&gt;Case 1: Sold for $40,000 cash → Loss $2,000&lt;/h4&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="jb"&gt;&lt;div class="jt"&gt;Journal — Loss on Disposal&lt;/div&gt;</p>
+<p class="p1">&lt;table class="jj"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Account&lt;/th&gt;&lt;th&gt;Dr ($)&lt;/th&gt;&lt;th&gt;Cr ($)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Jan 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Disposal: MV&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;60,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Motor vans&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;60,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Jan 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Acc dep: MV&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;18,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Disposal: MV&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;18,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Jan 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Cash&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;40,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Disposal: MV&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;40,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Jan 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Loss on disposal: MV&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;2,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Disposal: MV&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;2,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h4&gt;Case 2: Sold for $50,000 cash → Profit $8,000&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;Same first 3 steps, but step 4:&lt;/p&gt;</p>
+<p class="p1">&lt;div class="jb"&gt;&lt;div class="jt"&gt;Step 4 — Profit&lt;/div&gt;</p>
+<p class="p1">&lt;table class="jj"&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Jan 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Disposal: MV&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;8,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Profit on disposal: MV&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;8,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="tip"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Composite journal entry&lt;/strong&gt; (alternative — all in one):&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Dr Acc dep: MV 18,000 · Dr Cash 40,000 · Dr Loss on disposal 2,000 · Cr Motor vans 60,000&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 15 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s15"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;15&lt;/span&gt; DISPOSAL&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Disposal — T-Accounts &amp;amp; More&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;T-Account Example&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Machine $120,000 bought 1 Apr 2018. Zero residual. 20% on NBV. Full year in acquisition, none in disposal.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Dep 2018/19: $120K × 20% = $24,000. Dep 2019/20: $96K × 20% = $19,200. AD = $43,200.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Dep 2020/21 = $0 (none in year of disposal). Sold 1 Jun 2020 for $80,000 by cheque.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h4&gt;Case 1: Profit on disposal (sold for $80,000)&lt;/h4&gt;</p>
+<p class="p1">&lt;p&gt;NBV = $76,800. Proceeds = $80,000. Profit = $3,200.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="ta"&gt;&lt;div class="tt"&gt;Disposal: Machinery&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tb"&gt;</p>
+<p class="p1">&lt;div class="tl"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jun 1&lt;/span&gt;&lt;span class="tn"&gt;Machinery&lt;/span&gt;&lt;span class="tv"&gt;120,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;&lt;/span&gt;&lt;span class="tn"&gt;Profit on disposal&lt;/span&gt;&lt;span class="tv"&gt;3,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;123,200&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tr"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jun 1&lt;/span&gt;&lt;span class="tn"&gt;Acc dep: Mach&lt;/span&gt;&lt;span class="tv"&gt;43,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jun 1&lt;/span&gt;&lt;span class="tn"&gt;Bank&lt;/span&gt;&lt;span class="tv"&gt;80,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;123,200&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;I/S extract: &lt;strong&gt;Other revenue — Profit on disposal: Machinery $3,200&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h4&gt;Case 2: Loss on disposal (sold for $20,000)&lt;/h4&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="ta"&gt;&lt;div class="tt"&gt;Disposal: Machinery&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tb"&gt;</p>
+<p class="p1">&lt;div class="tl"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jun 1&lt;/span&gt;&lt;span class="tn"&gt;Machinery&lt;/span&gt;&lt;span class="tv"&gt;120,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;120,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tr"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jun 1&lt;/span&gt;&lt;span class="tn"&gt;Acc dep: Mach&lt;/span&gt;&lt;span class="tv"&gt;43,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jun 1&lt;/span&gt;&lt;span class="tn"&gt;Bank&lt;/span&gt;&lt;span class="tv"&gt;20,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jun 1&lt;/span&gt;&lt;span class="tn"&gt;Loss on disposal&lt;/span&gt;&lt;span class="tv"&gt;56,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;120,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;I/S extract: &lt;strong&gt;Expenses — Loss on disposal: Machinery $56,800&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="sep"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Disposal on Credit&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;If sold on credit, replace Cash/Bank with &lt;strong&gt;Other receivable&lt;/strong&gt;. Everything else is the same.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Disposal Expenses&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Sold machine for $30,000 cash but paid $4,000 to repair it before sale.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;The repair cost goes to the &lt;strong&gt;Dr side of Disposal&lt;/strong&gt; (reduces net proceeds).&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Disposal with Pro-Rata Depreciation&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Machine $400,000, bought 1 Jul 2018. 40% reducing balance, pro-rata. Year end 30 Jun. Sold 1 Jun 2021.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Dep 2018/19: $400K × 40% = $160,000&lt;br&gt;</p>
+<p class="p1">Dep 2019/20: $240K × 40% = $96,000&lt;br&gt;</p>
+<p class="p1">Dep 2020/21: $144K × 40% × &lt;strong&gt;11/12&lt;/strong&gt; = $52,800&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;AD at disposal = $160K + $96K + $52.8K = $308,800&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;The 2020/21 dep is &lt;strong&gt;11 months&lt;/strong&gt; (Jul 2020 to May 2021) — need to record this dep &lt;em&gt;before&lt;/em&gt; removing the asset.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Disposing Only PART of the Assets&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Two vans at $120,000 each. Bought 1 Jan 2018. 20% on cost. One damaged and sold 1 Oct 2021 for $35,000.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;AD for both up to 31 Dec 2020: $120K × 2 × 20% × 3 = $144,000&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;In 2021: disposed van gets 9/12 dep = $120K × 20% × 9/12 = $18,000&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Remaining van gets full year = $120K × 20% = $24,000&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;AD of disposed van = $144K ÷ 2 + $18K = $90,000. NBV = $30,000.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Proceeds = $35,000 → &lt;strong&gt;Profit $5,000&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 16 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s16"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;16&lt;/span&gt; DISPOSAL&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Trade-In Disposal 以舊易新&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;Give old NCA + pay the difference → get a new NCA. The &lt;strong&gt;trade-in value&lt;/strong&gt; (回收價) reduces what you pay.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="fm"&gt;&lt;div class="lb"&gt;Key Formula&lt;/div&gt;</p>
+<p class="p1">&lt;strong&gt;Cash paid = Cost of new NCA − Trade-in value of old NCA&lt;/strong&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;4 Steps&lt;/h3&gt;</p>
+<p class="p1">&lt;table class="dt"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Step&lt;/th&gt;&lt;th&gt;Dr&lt;/th&gt;&lt;th&gt;Cr&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;1. Transfer old cost&lt;/td&gt;&lt;td&gt;Disposal&lt;/td&gt;&lt;td&gt;NCA (old cost)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;2. Transfer old AD&lt;/td&gt;&lt;td&gt;Acc dep&lt;/td&gt;&lt;td&gt;Disposal&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;3. Record new NCA&lt;/td&gt;&lt;td&gt;NCA (new cost)&lt;/td&gt;&lt;td&gt;Disposal (trade-in value) + Cash (balance)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;4. Profit/Loss&lt;/td&gt;&lt;td colspan="2"&gt;Same as normal disposal&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Worked Example&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cd or"&gt;</p>
+<p class="p1">&lt;p&gt;Machine $50,000 bought 2018. 20% on cost, full year acq/none disposal. Year end 31 Dec.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;1 Mar 2020: traded in for new machine. Trade-in value: $27,000. New machine list price: $80,000.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;AD = $50K × 20% × 2 = $20,000. NBV = $30,000. Trade-in = $27,000 → &lt;strong&gt;Loss $3,000&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Cash paid = $80,000 − $27,000 = $53,000.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="jb"&gt;&lt;div class="jt"&gt;Journal — Trade-In&lt;/div&gt;</p>
+<p class="p1">&lt;table class="jj"&gt;</p>
+<p class="p1">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Account&lt;/th&gt;&lt;th&gt;Dr ($)&lt;/th&gt;&lt;th&gt;Cr ($)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Mar 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Disposal: Machinery&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;50,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Machinery (old)&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;50,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Mar 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Acc dep: Machinery&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;20,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Disposal: Machinery&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;20,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Mar 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Machinery (new)&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;80,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Disposal: Machinery&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;27,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Bank&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;53,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;Mar 1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Loss on disposal&lt;/strong&gt;&lt;/td&gt;&lt;td class="am"&gt;3,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="ind"&gt;Disposal: Machinery&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class="am"&gt;3,000&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;T-Accounts After Trade-In&lt;/h3&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="ta"&gt;&lt;div class="tt"&gt;Machinery&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tb"&gt;</p>
+<p class="p1">&lt;div class="tl"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Jan 1&lt;/span&gt;&lt;span class="tn"&gt;Bal b/d (old)&lt;/span&gt;&lt;span class="tv"&gt;50,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Mar 1&lt;/span&gt;&lt;span class="tn"&gt;Disposal (trade-in)&lt;/span&gt;&lt;span class="tv"&gt;27,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Mar 1&lt;/span&gt;&lt;span class="tn"&gt;Bank&lt;/span&gt;&lt;span class="tv"&gt;53,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;130,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tr"&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Mar 1&lt;/span&gt;&lt;span class="tn"&gt;Disposal (old)&lt;/span&gt;&lt;span class="tv"&gt;50,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="tw"&gt;&lt;span class="td"&gt;Dec 31&lt;/span&gt;&lt;span class="tn"&gt;Balance c/d&lt;/span&gt;&lt;span class="tv"&gt;80,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="to"&gt;130,000&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;SFP shows new machine at cost $80,000&lt;/strong&gt; (= trade-in $27K + cash $53K)&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;New dep for rest of year: $80,000 × 20% = &lt;strong&gt;$16,000&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Practice&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Old machine cost $90,000. AD: $54,000. Trade-in value: $40,000. &lt;strong&gt;Profit or loss, and how much?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p style="font-size:.82rem;color:var(--g500)"&gt;NBV = $90K − $54K = $36K. Trade-in = $40K. Difference?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;Profit $&lt;/span&gt;&lt;input type="number" id="c16a"&gt;&lt;button onclick="calc('c16a',4000)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c16a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ===================== SECTION 17 ===================== --&gt;</p>
+<p class="p1">&lt;section class="sec" id="s17"&gt;</p>
+<p class="p1">&lt;div class="sec-lab"&gt;&lt;span class="n"&gt;17&lt;/span&gt; GRAND FINALE&lt;/div&gt;</p>
+<p class="p1">&lt;h2&gt;Comprehensive Problem&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd or"&gt;&lt;div class="el"&gt;EXAM-STYLE QUESTION&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;John's TB as at 31 March 2024&lt;/strong&gt; includes:&lt;/p&gt;</p>
+<p class="p1">&lt;ul style="font-size:.88rem"&gt;</p>
+<p class="p1">&lt;li&gt;Office equipment $150,000 (AD: $30,000)&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Furniture &amp; fittings $120,000 (AD: $36,000)&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Wages $93,200 · Rent $96,000 · Sales $1,083,000 · Purchases $780,000&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Returns out $24,000 · Opening inv $170,000 · Receivables $47,800 · Payables $50,800&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Discount received $3,200 · Capital $300,000 · Drawings $40,000 · Bank $30,000&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Additional info:&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;ol style="font-size:.88rem"&gt;</p>
+<p class="p1">&lt;li&gt;Closing inventory: $190,000&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Accrued wages: $12,000&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Prepaid rent: $16,000&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Office equip bought for $20,000 in May 2021 was &lt;strong&gt;scrapped (zero value)&lt;/strong&gt; on 30 Sep 2023. &lt;strong&gt;No entry made.&lt;/strong&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Dep: OE at 20% on cost, F&amp;F at 30% on NBV. Full year acquisition, none in disposal.&lt;/li&gt;</p>
+<p class="p1">&lt;/ol&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;Working Through the Disposal&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;The unrecorded scrapping is the tricky part. Let's handle it:&lt;/p&gt;</p>
+<p class="p1">&lt;ul&gt;</p>
+<p class="p1">&lt;li&gt;Scrapped item: cost $20,000, bought May 2021&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;AD on scrapped item: $20,000 × 20% × 2 years (2021/22 and 2022/23) = &lt;strong&gt;$8,000&lt;/strong&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;NBV = $20,000 − $8,000 = $12,000. Proceeds = $0.&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;strong&gt;Loss on disposal = $12,000&lt;/strong&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Depreciation for remaining OE:&lt;/strong&gt; ($150,000 − $20,000) × 20% = &lt;strong&gt;$26,000&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Dep for F&amp;F:&lt;/strong&gt; ($120,000 − $36,000) × 30% = &lt;strong&gt;$25,200&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="rv"&gt;</p>
+<p class="p1">&lt;button class="rb" onclick="reveal('r17a')"&gt;👁 Show Income Statement&lt;/button&gt;</p>
+<p class="p1">&lt;div class="rc" id="r17a"&gt;</p>
+<p class="p1">&lt;div class="fs"&gt;&lt;div class="fh"&gt;&lt;h4&gt;John&lt;/h4&gt;&lt;h5&gt;Income Statement for year ended 31 March 2024&lt;/h5&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fy"&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Sales&lt;/span&gt;&lt;span class="fa c3"&gt;1,083,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Less: COGS&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Opening inventory&lt;/span&gt;&lt;span class="fa c2"&gt;170,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;+ Purchases&lt;/span&gt;&lt;span class="fa c2"&gt;780,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;− Returns out&lt;/span&gt;&lt;span class="fa c2"&gt;(24,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;− Closing inventory&lt;/span&gt;&lt;span class="fa c2"&gt;(190,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;(736,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr ft"&gt;&lt;span&gt;Gross profit&lt;/span&gt;&lt;span class="fa c3"&gt;347,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;+ Discount received&lt;/span&gt;&lt;span class="fa c3"&gt;3,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;350,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr"&gt;&lt;span&gt;Less: Expenses&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Wages ($93.2K + $12K)&lt;/span&gt;&lt;span class="fa c2"&gt;105,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Rent ($96K − $16K)&lt;/span&gt;&lt;span class="fa c2"&gt;80,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Loss on disposal: OE&lt;/span&gt;&lt;span class="fa c2"&gt;12,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Dep: Office equipment&lt;/span&gt;&lt;span class="fa c2"&gt;26,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Dep: Furn &amp; fittings&lt;/span&gt;&lt;span class="fa c2"&gt;25,200&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;(248,400)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr dl"&gt;&lt;span&gt;&lt;strong&gt;Net profit&lt;/strong&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;&lt;strong&gt;101,800&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="rv"&gt;</p>
+<p class="p1">&lt;button class="rb" onclick="reveal('r17b')"&gt;👁 Show SFP&lt;/button&gt;</p>
+<p class="p1">&lt;div class="rc" id="r17b"&gt;</p>
+<p class="p1">&lt;div class="fs"&gt;&lt;div class="fh"&gt;&lt;h4&gt;John&lt;/h4&gt;&lt;h5&gt;SFP as at 31 March 2024&lt;/h5&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fy"&gt;</p>
+<p class="p1">&lt;div class="fhd"&gt;ASSETS&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fhd" style="font-size:.84rem"&gt;Non-current assets&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Office equip ($150K − $20K)&lt;/span&gt;&lt;span class="fa c2"&gt;130,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Acc dep (W)&lt;/span&gt;&lt;span class="fa c2"&gt;(48,000)&lt;/span&gt;&lt;span class="fa c3"&gt;82,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Furn &amp; fittings&lt;/span&gt;&lt;span class="fa c2"&gt;120,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Less: Acc dep ($36K+$25.2K)&lt;/span&gt;&lt;span class="fa c2"&gt;(61,200)&lt;/span&gt;&lt;span class="fa c3"&gt;58,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;140,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fhd" style="font-size:.84rem"&gt;Current assets&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Inventory&lt;/span&gt;&lt;span class="fa c3"&gt;190,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Trade receivables&lt;/span&gt;&lt;span class="fa c3"&gt;47,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Prepaid expenses&lt;/span&gt;&lt;span class="fa c3"&gt;16,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Bank&lt;/span&gt;&lt;span class="fa c3"&gt;30,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;283,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr dl"&gt;&lt;span&gt;&lt;strong&gt;Total assets&lt;/strong&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;&lt;strong&gt;424,600&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fhd"&gt;CAPITAL AND LIABILITIES&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Capital — 1 Apr 2023&lt;/span&gt;&lt;span class="fa c2"&gt;300,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;+ Net profit&lt;/span&gt;&lt;span class="fa c2"&gt;101,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;− Drawings&lt;/span&gt;&lt;span class="fa c2"&gt;(40,000)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;361,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Trade payables&lt;/span&gt;&lt;span class="fa c2"&gt;50,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr i1"&gt;&lt;span&gt;Accrued expenses&lt;/span&gt;&lt;span class="fa c2"&gt;12,000&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr st"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;62,800&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="fr dl"&gt;&lt;span&gt;&lt;strong&gt;Total C&amp;L&lt;/strong&gt;&lt;/span&gt;&lt;span class="fa c3"&gt;&lt;strong&gt;424,600&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;p style="font-size:.84rem;color:var(--g500);margin-top:8px"&gt;</p>
+<p class="p1">&lt;strong&gt;W: OE Acc dep&lt;/strong&gt; = TB $30,000 − disposed $8,000 + this year $26,000 = &lt;strong&gt;$48,000&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="kc"&gt;&lt;div class="tg"&gt;SFP Rule for Disposal&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;When an asset is disposed and removed from books:&lt;br&gt;</p>
+<p class="p1">&lt;strong&gt;Cost on SFP&lt;/strong&gt; = TB cost − disposed cost&lt;br&gt;</p>
+<p class="p1">&lt;strong&gt;Acc dep on SFP&lt;/strong&gt; = TB AD − disposed AD + this year's dep&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="sep"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h3&gt;🏆 Final Challenge&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Challenge&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Machine cost $80,000. Bought 1 Jan 2019. 25% SL on cost. No residual. Sold 1 Jul 2022 for $30,000. Pro-rata dep in year of disposal. &lt;strong&gt;What is the loss on disposal?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p style="font-size:.82rem;color:var(--g500)"&gt;AD = $80K×25%×3.5 yrs = $70,000. NBV = $10,000. Proceeds = $30,000.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c17a"&gt;&lt;button onclick="calc('c17a',0,'profit')"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c17a-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cq"&gt;&lt;div class="ql"&gt;🔢 Challenge 2&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Using the same question above — it's actually a PROFIT. &lt;strong&gt;What is the profit on disposal?&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;div class="ci"&gt;&lt;span&gt;$&lt;/span&gt;&lt;input type="number" id="c17b"&gt;&lt;button onclick="calc('c17b',20000)"&gt;Check&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cf" id="c17b-f"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cd nv" style="margin-top:32px"&gt;</p>
+<p class="p1">&lt;h4 style="color:var(--o400);border:none;padding:0;margin-top:0"&gt;🎉 Congratulations!&lt;/h4&gt;</p>
+<p class="p1">&lt;p style="color:#fff;margin:0"&gt;You've completed the &lt;strong style="color:var(--o400)"&gt;Ultimate Depreciation Guide&lt;/strong&gt;. You now understand:&lt;/p&gt;</p>
+<p class="p1">&lt;ul style="color:rgba(255,255,255,.8)"&gt;</p>
+<p class="p1">&lt;li&gt;NCAs and how to determine their cost&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Capital vs revenue expenditure&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;All three depreciation methods&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Time apportionment and special cases&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Double entry, ledger accounts, and financial statements&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Improvements to existing NCAs&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;Disposal and trade-in disposal&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;p style="color:var(--o300);margin:0"&gt;Go crush that HKDSE! 🚀&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;&lt;!-- /mn --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">// ========== SIDEBAR ==========</p>
+<p class="p1">function toggleSide(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('side').classList.toggle('open');</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">// Close sidebar on link click (mobile)</p>
+<p class="p1">document.querySelectorAll('.side a').forEach(function(a){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>a.addEventListener('click',function(){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(window.innerWidth&lt;=900) document.getElementById('side').classList.remove('open');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">// ========== PROGRESS BAR ==========</p>
+<p class="p1">window.addEventListener('scroll',function(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var h=document.documentElement;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var pct=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('prog').style.width=pct+'%';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Active nav link</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var secs=document.querySelectorAll('.sec');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var links=document.querySelectorAll('.side a');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var cur='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>secs.forEach(function(s){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(s.getBoundingClientRect().top&lt;=100) cur=s.id;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>links.forEach(function(l){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>l.classList.remove('on');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(l.getAttribute('href')==='#'+cur) l.classList.add('on');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">// ========== MULTIPLE CHOICE QUIZ ==========</p>
+<p class="p1">function quiz(btn,id,correct){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var box=document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var fb=document.getElementById(id+'-f');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var btns=box.querySelectorAll('.qb');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>btns.forEach(function(b){b.disabled=true;});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(correct){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.classList.add('ok');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.className='qf s okf';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.textContent='✅ Correct!';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.classList.add('no');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.className='qf s nof';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.textContent='❌ Not quite. Try to think about why!';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Highlight correct</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btns.forEach(function(b){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if(b!==btn) b.classList.add('ok');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">// ========== CALCULATION QUIZ ==========</p>
+<p class="p1">function calc(inputId,answer,note){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var input=document.getElementById(inputId);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var fb=document.getElementById(inputId+'-f');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var val=parseFloat(input.value);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(isNaN(val)){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.className='cf s no';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.textContent='Please enter a number.';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(Math.abs(val-answer)&lt;0.5){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.className='cf s ok';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.textContent='✅ Correct! $'+answer.toLocaleString();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input.style.borderColor='var(--green)';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.className='cf s no';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fb.textContent='❌ Not quite. The answer is $'+answer.toLocaleString()+'. Review the section above!';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input.style.borderColor='var(--red)';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">// ========== REVEAL ==========</p>
+<p class="p1">function reveal(id){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var el=document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>el.classList.toggle('s');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Change button text</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var btn=el.previousElementSibling;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(el.classList.contains('s')){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.textContent='🙈 Hide';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.textContent='👁 Show';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
