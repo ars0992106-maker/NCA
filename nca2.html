@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ultimate Depreciation Guide — HKDSE BAFS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --o50:#FFF7ED;--o100:#FFEDD5;--o200:#FED7AA;--o300:#FDBA74;
+  --o400:#FB923C;--o500:#F97316;--o600:#EA580C;--o700:#C2410C;
+  --n900:#0C0C1D;--n800:#1A1A2E;--n700:#16213E;--n600:#0F3460;
+  --g50:#FAFAFA;--g100:#F5F5F5;--g200:#E5E5E5;--g300:#D4D4D4;
+  --g400:#A3A3A3;--g500:#737373;--g600:#525252;--g700:#404040;--g800:#262626;
+  --green:#22C55E;--green-l:#DCFCE7;--green-d:#15803D;
+  --red:#EF4444;--red-l:#FEE2E2;--red-d:#B91C1C;
+  --blue:#3B82F6;--blue-l:#DBEAFE;
+  --yellow-l:#FEF9C3;--yellow-d:#A16207;
+  --ff:'Space Grotesk',sans-serif;
+  --fb:'Inter',sans-serif;
+  --fm:'JetBrains Mono',monospace;
+  --bw:5px;--side:260px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:var(--fb);color:var(--g800);background:var(--g50);line-height:1.7;font-size:15.5px;overflow-x:hidden}
+
+#prog{position:fixed;top:0;left:0;height:4px;z-index:1001;background:linear-gradient(90deg,var(--o500),var(--o300));width:0%;transition:width .12s}
+
+.side{position:fixed;top:0;left:0;width:var(--side);height:100vh;background:var(--n800);color:#fff;overflow-y:auto;z-index:900;border-right:var(--bw) solid var(--o500);transition:transform .3s;scrollbar-width:thin;scrollbar-color:var(--o500) var(--n900)}
+.side::-webkit-scrollbar{width:5px}.side::-webkit-scrollbar-thumb{background:var(--o500);border-radius:3px}
+.side-hd{padding:18px 16px 12px;border-bottom:2px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between}
+.side-hd h3{font-family:var(--ff);font-size:.85rem;color:var(--o400);letter-spacing:1px;text-transform:uppercase}
+.side-x{display:none;background:none;border:none;color:#fff;font-size:1.4rem;cursor:pointer}
+.side ul{list-style:none;padding:8px 0}
+.side a{display:block;padding:6px 16px;color:rgba(255,255,255,.65);text-decoration:none;font-size:.8rem;border-left:3px solid transparent;transition:all .15s}
+.side a:hover,.side a.on{color:#fff;background:rgba(255,255,255,.05);border-left-color:var(--o500)}
+.side .pt{padding:14px 16px 4px;font-family:var(--ff);font-size:.65rem;color:var(--o400);text-transform:uppercase;letter-spacing:2px;font-weight:700}
+.ham{display:none;position:fixed;top:10px;left:10px;z-index:950;background:var(--n800);color:#fff;border:3px solid var(--o500);width:42px;height:42px;border-radius:8px;font-size:1.2rem;cursor:pointer;align-items:center;justify-content:center}
+
+.mn{margin-left:var(--side);min-height:100vh}
+
+/* HERO */
+.hero{background:var(--n800);color:#fff;padding:70px 40px 50px;position:relative;overflow:hidden;border-bottom:var(--bw) solid var(--o500)}
+.hero::before{content:'';position:absolute;top:-120px;right:-80px;width:400px;height:400px;background:var(--o500);opacity:.07;border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-60px;left:10%;width:200px;height:200px;background:var(--o400);opacity:.05;transform:rotate(45deg)}
+.hero .badge{display:inline-block;background:var(--o500);color:#fff;font-family:var(--ff);font-size:.7rem;font-weight:700;padding:3px 12px;border-radius:4px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.hero h1{font-family:var(--ff);font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:14px;max-width:650px;position:relative;z-index:1}
+.hero h1 span{color:var(--o400)}
+.hero .sub{font-size:1rem;color:rgba(255,255,255,.65);max-width:550px;position:relative;z-index:1}
+.hero .note{margin-top:20px;padding:14px 18px;background:rgba(255,255,255,.05);border-left:4px solid var(--o500);border-radius:0 8px 8px 0;max-width:550px;position:relative;z-index:1;font-size:.88rem;color:rgba(255,255,255,.8)}
+
+/* SECTIONS */
+.sec{padding:50px 36px;max-width:880px;margin:0 auto;border-bottom:1px solid var(--g200)}
+.sec:last-of-type{border-bottom:none}
+.sec-lab{display:inline-flex;align-items:center;gap:6px;font-family:var(--ff);font-size:.7rem;font-weight:700;color:var(--o600);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.sec-lab .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--o500);color:#fff;border-radius:5px;font-size:.78rem}
+.sec h2{font-family:var(--ff);font-size:clamp(1.4rem,3vw,2rem);font-weight:700;color:var(--n800);margin-bottom:20px;line-height:1.25;border-bottom:var(--bw) solid var(--o500);padding-bottom:10px;display:inline-block}
+.sec h3{font-family:var(--ff);font-size:1.15rem;font-weight:700;color:var(--n800);margin:28px 0 12px;padding-left:14px;border-left:4px solid var(--o500)}
+.sec h4{font-family:var(--ff);font-size:1rem;font-weight:600;color:var(--g700);margin:20px 0 10px}
+.sec p{margin-bottom:14px}
+.sec ul,.sec ol{padding-left:22px;margin-bottom:14px}
+.sec li{margin-bottom:6px}
+
+/* CARDS */
+.cd{background:#fff;border-radius:10px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.05);border:2px solid var(--g200)}
+.cd.or{border-left:var(--bw) solid var(--o500)}
+.cd.nv{border-left:var(--bw) solid var(--n800)}
+.cd.gr{border-left:var(--bw) solid var(--green)}
+.cd.bl{border-left:var(--bw) solid var(--blue)}
+.cd.rd{border-left:var(--bw) solid var(--red)}
+
+/* FORMULA */
+.fm{background:var(--n800);color:#fff;border-radius:10px;padding:16px 24px;margin:16px 0;border:3px solid var(--o500);font-family:var(--fm);font-size:.9rem}
+.fm .lb{font-family:var(--ff);font-size:.65rem;font-weight:700;color:var(--o400);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+
+/* KEY CONCEPT */
+.kc{background:var(--o50);border:3px solid var(--o500);border-radius:10px;padding:18px 22px;margin:16px 0}
+.kc .tg{display:inline-block;background:var(--o500);color:#fff;font-family:var(--ff);font-size:.65rem;font-weight:700;padding:2px 10px;border-radius:4px;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+
+/* EXAM TRAP */
+.trap{background:var(--red-l);border:3px solid var(--red);border-radius:10px;padding:18px 22px;margin:16px 0;position:relative}
+.trap::before{content:'⚠ EXAM TRAP';font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--red-d);letter-spacing:2px;display:block;margin-bottom:6px}
+
+/* TIP */
+.tip{background:var(--green-l);border:3px solid var(--green);border-radius:10px;padding:18px 22px;margin:16px 0}
+.tip::before{content:'💡 PRO TIP';font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--green-d);letter-spacing:2px;display:block;margin-bottom:6px}
+
+/* COMPARE GRID */
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.cc{background:#fff;border-radius:10px;padding:18px 20px;border:3px solid var(--g200)}
+.cc.a{border-color:var(--blue)}.cc.b{border-color:var(--o500)}
+.cc h4{margin-top:0}
+
+/* TABLES */
+table.dt{width:100%;border-collapse:collapse;margin:14px 0;font-size:.87rem;background:#fff;border-radius:8px;overflow:hidden;border:2px solid var(--g200)}
+table.dt th{background:var(--n800);color:#fff;padding:9px 12px;text-align:left;font-family:var(--ff);font-weight:600;font-size:.82rem}
+table.dt td{padding:9px 12px;border-bottom:1px solid var(--g200)}
+table.dt tr:last-child td{border-bottom:none}
+table.dt tr:nth-child(even){background:var(--g50)}
+.ar{text-align:right;font-family:var(--fm)}
+.tot{font-weight:700;border-top:3px double var(--g400)}
+
+/* JOURNAL */
+.jb{background:#fff;border:3px solid var(--n800);border-radius:10px;overflow:hidden;margin:16px 0}
+.jb .jt{background:var(--n800);color:#fff;padding:9px 18px;font-family:var(--ff);font-weight:700;font-size:.88rem}
+table.jj{width:100%;border-collapse:collapse;font-size:.85rem}
+table.jj th{padding:7px 12px;text-align:left;background:var(--g100);border-bottom:2px solid var(--g300);font-weight:600;font-size:.78rem}
+table.jj td{padding:7px 12px;border-bottom:1px solid var(--g100);vertical-align:top}
+.ind{padding-left:32px!important}
+.am{text-align:right;font-family:var(--fm);white-space:nowrap}
+.nt{color:var(--g500);font-size:.78rem;font-style:italic}
+
+/* T-ACCOUNT */
+.ta{background:#fff;border:3px solid var(--g300);border-radius:10px;overflow:hidden;margin:16px 0}
+.ta .tt{text-align:center;padding:7px;font-family:var(--ff);font-weight:700;background:var(--g100);border-bottom:3px solid var(--g400);font-size:.9rem}
+.ta .tb{display:flex;min-height:60px}
+.ta .tl,.ta .tr{flex:1;padding:7px 9px;font-size:.8rem}
+.ta .tl{border-right:3px solid var(--g400)}
+.ta .tw{display:grid;grid-template-columns:auto 1fr auto;gap:5px;padding:2px 0;align-items:baseline}
+.ta .td{color:var(--g500);font-size:.75rem;white-space:nowrap}
+.ta .tn{font-size:.8rem}
+.ta .tv{text-align:right;font-family:var(--fm);font-weight:600;font-size:.8rem;white-space:nowrap}
+.ta .to{border-top:3px double var(--g400);padding-top:3px;margin-top:3px;text-align:right;font-family:var(--fm);font-weight:700;font-size:.8rem}
+.ta .tg{height:16px}
+
+/* FINANCIAL STATEMENT */
+.fs{background:#fff;border:3px solid var(--n800);border-radius:10px;overflow:hidden;margin:16px 0}
+.fs .fh{background:var(--n800);color:#fff;padding:10px 18px;text-align:center}
+.fs .fh h4{font-family:var(--ff);margin:0;font-size:.9rem;color:#fff}
+.fs .fh h5{font-weight:400;font-size:.78rem;color:rgba(255,255,255,.65);margin:2px 0 0}
+.fs .fy{padding:14px 18px;font-size:.85rem}
+.fs .fr{display:flex;justify-content:space-between;padding:3px 0}
+.fs .i1{padding-left:22px}.fs .i2{padding-left:44px}
+.fs .ft{font-weight:700;border-top:2px solid var(--g300);padding-top:6px;margin-top:3px}
+.fs .st{font-weight:600}
+.fs .dl{border-top:3px double var(--g400)}
+.fs .fa{font-family:var(--fm);white-space:nowrap}
+.fs .c2{min-width:70px;text-align:right}.fs .c3{min-width:70px;text-align:right;font-weight:600}
+.fs .fhd{font-weight:700;margin:10px 0 3px;font-size:.88rem;text-decoration:underline}
+
+/* QUIZ */
+.qz{background:var(--o50);border:3px solid var(--o400);border-radius:10px;padding:20px;margin:20px 0}
+.qz .ql{font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--o600);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.qz .qt{font-weight:600;margin-bottom:12px;font-size:.95rem}
+.qz .qo{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.qb{padding:9px 18px;border:3px solid var(--g300);border-radius:8px;background:#fff;cursor:pointer;font-family:var(--fb);font-weight:600;font-size:.87rem;transition:all .15s}
+.qb:hover:not(:disabled){border-color:var(--o500);background:var(--o50)}
+.qb.ok{border-color:var(--green)!important;background:var(--green-l)!important;color:var(--green-d)!important}
+.qb.no{border-color:var(--red)!important;background:var(--red-l)!important;color:var(--red-d)!important}
+.qb:disabled{cursor:default;opacity:.65}
+.qf{padding:9px 12px;border-radius:8px;font-size:.87rem;display:none;margin-top:6px}
+.qf.s{display:block}.qf.okf{background:var(--green-l);color:var(--green-d);border:2px solid var(--green)}.qf.nof{background:var(--red-l);color:var(--red-d);border:2px solid var(--red)}
+
+/* CALC QUIZ */
+.cq{background:#fff;border:3px solid var(--n800);border-radius:10px;padding:20px;margin:20px 0}
+.cq .ql{font-family:var(--ff);font-size:.68rem;font-weight:700;color:var(--n800);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.ci{display:flex;align-items:center;gap:7px;margin:10px 0;flex-wrap:wrap}
+.ci span{font-weight:700;font-size:1.05rem}
+.ci input{width:140px;padding:9px 12px;border:3px solid var(--g300);border-radius:8px;font-family:var(--fm);font-size:.95rem;outline:none;transition:border-color .15s}
+.ci input:focus{border-color:var(--o500)}
+.ci button{padding:9px 18px;background:var(--o500);color:#fff;border:none;border-radius:8px;font-family:var(--ff);font-weight:700;font-size:.82rem;cursor:pointer;transition:background .15s}
+.ci button:hover{background:var(--o600)}
+.cf{padding:9px 12px;border-radius:8px;font-size:.87rem;margin-top:6px;display:none}
+.cf.s{display:block}.cf.ok{background:var(--green-l);color:var(--green-d);border:2px solid var(--green)}.cf.no{background:var(--red-l);color:var(--red-d);border:2px solid var(--red)}
+
+/* REVEAL */
+.rv{margin:16px 0}
+.rb{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:var(--n800);color:#fff;border:3px solid var(--o500);border-radius:8px;font-family:var(--ff);font-weight:700;font-size:.82rem;cursor:pointer;transition:all .15s}
+.rb:hover{background:var(--o500)}
+.rc{display:none;margin-top:10px;padding:16px;background:var(--g100);border-radius:10px;border:2px solid var(--g300);animation:fi .25s ease}
+.rc.s{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* STATEMENT CALC */
+.sc{background:#fff;border:2px solid var(--g300);border-radius:10px;padding:18px;margin:14px 0;font-size:.87rem}
+.sc .st{font-family:var(--ff);font-weight:700;text-align:center;margin-bottom:10px}
+.sc .sr{display:flex;justify-content:space-between;padding:3px 0}
+.sc .sr.t{border-top:2px solid var(--g400);font-weight:700;margin-top:3px;padding-top:6px}
+
+/* UTILITY */
+.hl{background:var(--o100);padding:1px 5px;border-radius:3px;font-weight:600}
+.mono{font-family:var(--fm)}
+strong{color:var(--n800)}
+.sep{height:3px;background:linear-gradient(90deg,var(--o500),var(--o200),transparent);border:none;margin:32px 0;border-radius:2px}
+.el{display:inline-block;background:var(--o500);color:#fff;font-family:var(--ff);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:5px 5px 0 0;letter-spacing:1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+
+@media(max-width:900px){
+  .side{transform:translateX(-100%)}.side.open{transform:translateX(0)}
+  .ham{display:flex}.side-x{display:block}.mn{margin-left:0}
+  .sec{padding:32px 18px}.hero{padding:50px 18px 36px}
+  .cg,.two{grid-template-columns:1fr}
+  .ta .tb{flex-direction:column}.ta .tl{border-right:none;border-bottom:3px solid var(--g400)}
+}
+@media(max-width:500px){
+  .qz .qo{flex-direction:column}.ci{flex-direction:column;align-items:flex-start}
+  .hero h1{font-size:1.6rem}
+}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+<button class="ham" id="ham" onclick="toggleSide()">☰</button>
+
+<nav class="side" id="side">
+<div class="side-hd"><h3>📘 Contents</h3><button class="side-x" onclick="toggleSide()">✕</button></div>
+<ul>
+<li class="pt">Part 1 · Foundations</li>
+<li><a href="#s1">1. Non-Current Assets</a></li>
+<li><a href="#s2">2. Capital vs Revenue</a></li>
+<li><a href="#s3">3. Why Depreciation?</a></li>
+<li><a href="#s4">4. Key Terms</a></li>
+<li class="pt">Part 2 · Methods</li>
+<li><a href="#s5">5. Straight-Line</a></li>
+<li><a href="#s6">6. Reducing Balance</a></li>
+<li><a href="#s7">7. Usage-Based</a></li>
+<li><a href="#s8">8. Choosing a Method</a></li>
+<li class="pt">Part 3 · Real Situations</li>
+<li><a href="#s9">9. Time Apportionment</a></li>
+<li><a href="#s10">10. Special Cases</a></li>
+<li class="pt">Part 4 · Recording</li>
+<li><a href="#s11">11. Double Entry</a></li>
+<li><a href="#s12">12. Ledger & Financial Stmts</a></li>
+<li class="pt">Part 5 · Advanced</li>
+<li><a href="#s13">13. Improvements to NCAs</a></li>
+<li class="pt">Part 6 · Disposal</li>
+<li><a href="#s14">14. Disposal Basics</a></li>
+<li><a href="#s15">15. Disposal Entries</a></li>
+<li><a href="#s16">16. Trade-In Disposal</a></li>
+<li><a href="#s17">17. Grand Finale</a></li>
+</ul>
+</nav>
+
+<div class="mn">
+
+<!-- ========== HERO ========== -->
+<header class="hero">
+<div class="badge">HKDSE BAFS · Chapter 11</div>
+<h1>The Ultimate Guide to <span>Depreciation</span> of Non-Current Assets</h1>
+<p class="sub">From zero to mastery. Every concept built from the ground up — so clearly that you'll crush the hardest exam questions.</p>
+<div class="note"><strong>2025-2026:</strong> Specifically optimised for HKDSE! </div>
+</header>
+
+<!-- ===================== SECTION 1 ===================== -->
+<section class="sec" id="s1">
+<div class="sec-lab"><span class="n">1</span> FOUNDATIONS</div>
+<h2>Non-Current Assets</h2>
+
+<p>Your bakery buys <strong>flour</strong> — it's gone within a week. It also buys an <strong>oven</strong> — that stays for years. The oven is a <strong>non-current asset</strong>.</p>
+
+<div class="kc">
+<div class="tg">Definition</div>
+<p><strong>Non-current assets (NCAs)</strong> = assets held <strong>longer than one year</strong> to help the business earn money. They are <em>not</em> intended to be turned into cash quickly.</p>
+</div>
+
+<p><strong>Examples:</strong> 🚐 Motor vehicles · 🏢 Premises · 🖥️ Equipment · ⚙️ Machinery · 🪑 Furniture</p>
+
+<p>The big question: if an NCA helps you earn money for <em>5 years</em>, should you record its entire cost as an expense in Year 1? That feels unfair. This is why we need <strong>depreciation</strong> — but first, let's figure out what "cost" actually means.</p>
+
+<h3>What Goes Into the "Cost" of an NCA?</h3>
+
+<p>Under the <strong>historical cost principle</strong>, assets are recorded at their <strong>actual acquisition cost</strong>. But not every dollar spent <em>around</em> an asset counts. We split all spending into two categories:</p>
+
+<div class="qz" id="q1a">
+<div class="ql">Quick Check</div>
+<p class="qt">A bakery buys a delivery van for $80,000. Is this a non-current asset?</p>
+<div class="qo">
+<button class="qb" onclick="quiz(this,'q1a',1)">Yes — long-term benefit</button>
+<button class="qb" onclick="quiz(this,'q1a',0)">No — too expensive</button>
+</div>
+<div class="qf" id="q1a-f"></div>
+</div>
+</section>
+
+<!-- ===================== SECTION 2 ===================== -->
+<section class="sec" id="s2">
+<div class="sec-lab"><span class="n">2</span> FOUNDATIONS</div>
+<h2>Capital vs Revenue Expenditure</h2>
+
+<div class="cg">
+<div class="cc a">
+<h4>💎 Capital Expenditure 資本支出</h4>
+<p><strong>Long-term benefit.</strong> Added to the NCA cost on the SFP.</p>
+<p><em>"This spending creates or improves something lasting."</em></p>
+</div>
+<div class="cc b">
+<h4>🔥 Revenue Expenditure 收益支出</h4>
+<p><strong>Short-term benefit only.</strong> Expensed in the Income Statement now.</p>
+<p><em>"This spending is used up — it won't benefit next year."</em></p>
+</div>
+</div>
+
+<h3>Case 1: Buying a NEW NCA</h3>
+<p><strong>Capital</strong> = purchase price + anything needed to bring the NCA to its <strong>location and condition for use</strong>.</p>
+
+<div class="kc">
+<div class="tg">The Golden Rule</div>
+<p>Ask: <strong>"Without this spending, could the asset actually be used?"</strong><br>NO → Capital. YES → Revenue.</p>
+</div>
+
+<p><strong>Revenue</strong> clues: repeating payments (annual insurance), consumables (petrol, electricity).</p>
+
+<div class="cd or">
+<div class="el">EXAMPLE</div>
+<p><strong>Classifying motor van expenditures:</strong></p>
+<table class="dt">
+<thead><tr><th>Expenditure</th><th>Cap?</th><th>Rev?</th><th>Reason</th></tr></thead>
+<tbody>
+<tr><td>Purchase cost</td><td><strong style="color:var(--blue)">✓</strong></td><td></td><td>Core price</td></tr>
+<tr><td>Legal costs of acquisition</td><td><strong style="color:var(--blue)">✓</strong></td><td></td><td>Needed to obtain it</td></tr>
+<tr><td>Petrol</td><td></td><td><strong style="color:var(--o500)">✓</strong></td><td>Consumable</td></tr>
+<tr><td>Delivery from overseas</td><td><strong style="color:var(--blue)">✓</strong></td><td></td><td>Brings to location</td></tr>
+<tr><td>Annual insurance</td><td></td><td><strong style="color:var(--o500)">✓</strong></td><td>Repeating payment</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="sc">
+<div class="st">Cost of the Motor Van</div>
+<div class="sr"><span>Purchase cost</span><span class="mono">$50,000</span></div>
+<div class="sr"><span>Legal costs</span><span class="mono">2,000</span></div>
+<div class="sr"><span>Delivery cost</span><span class="mono">4,000</span></div>
+<div class="sr t"><span><strong>Cost of motor van</strong></span><span class="mono"><strong>$56,000</strong></span></div>
+</div>
+
+<h3>Case 2: Spending on EXISTING NCAs</h3>
+<div class="cg">
+<div class="cc a">
+<h4>Capital ✓</h4>
+<ul><li><strong>Improves</strong> function (better than before)</li><li><strong>Extends</strong> useful life</li></ul>
+</div>
+<div class="cc b">
+<h4>Revenue ✓</h4>
+<ul><li><strong>Restores</strong> function (back to normal)</li><li>Regular maintenance/repairs</li></ul>
+</div>
+</div>
+
+<div class="cd or">
+<div class="el">EXAMPLE — EXISTING VAN</div>
+<table class="dt">
+<thead><tr><th>Expenditure</th><th>Cap?</th><th>Rev?</th></tr></thead>
+<tbody>
+<tr><td>Replace broken seat belt</td><td></td><td><strong style="color:var(--o500)">✓</strong> restore</td></tr>
+<tr><td>Replace oil tank with bigger one</td><td><strong style="color:var(--blue)">✓</strong> improve</td><td></td></tr>
+<tr><td>Repaint company logo</td><td></td><td><strong style="color:var(--o500)">✓</strong> restore</td></tr>
+<tr><td>New filter extending life by 1 year</td><td><strong style="color:var(--blue)">✓</strong> extends life</td><td></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Case 3: General Services</h3>
+<p>Rent, salaries, utilities → always <strong>revenue expenditure</strong>. Not related to creating/improving any NCA.</p>
+
+<div class="trap">
+<h4>Repairs on a NEWLY-BOUGHT second-hand asset</h4>
+<p>Repairing a broken engine <em>before first use</em> → <strong class="hl">CAPITAL</strong> (needed to bring it to working condition).</p>
+<p>Repairing a breakdown <em>during daily use</em> → <strong>Revenue</strong> (just restoring it).</p>
+</div>
+
+<div class="trap">
+<h4>Insurance</h4>
+<p>Insurance <em>during transit</em> of new asset → <strong class="hl">CAPITAL</strong> (without it, delivery won't happen).</p>
+<p>Annual insurance <em>during normal use</em> → <strong>Revenue</strong> (machine works fine without it).</p>
+</div>
+
+<div class="qz" id="q2a"><div class="ql">Practice</div>
+<p class="qt">A food store installs theft detection equipment. Capital or revenue?</p>
+<div class="qo"><button class="qb" onclick="quiz(this,'q2a',1)">Capital</button><button class="qb" onclick="quiz(this,'q2a',0)">Revenue</button></div>
+<div class="qf" id="q2a-f"></div></div>
+
+<div class="qz" id="q2b"><div class="ql">Practice</div>
+<p class="qt">Roof repairs on a store. Capital or revenue?</p>
+<div class="qo"><button class="qb" onclick="quiz(this,'q2b',0)">Capital</button><button class="qb" onclick="quiz(this,'q2b',1)">Revenue</button></div>
+<div class="qf" id="q2b-f"></div></div>
+
+<div class="qz" id="q2c"><div class="ql">Practice</div>
+<p class="qt">Extension of an existing factory building. Capital or revenue?</p>
+<div class="qo"><button class="qb" onclick="quiz(this,'q2c',1)">Capital</button><button class="qb" onclick="quiz(this,'q2c',0)">Revenue</button></div>
+<div class="qf" id="q2c-f"></div></div>
+
+<div class="qz" id="q2d"><div class="ql">Practice</div>
+<p class="qt">Legal cost of obtaining a mortgage loan for a new property. Capital or revenue?</p>
+<div class="qo"><button class="qb" onclick="quiz(this,'q2d',1)">Capital</button><button class="qb" onclick="quiz(this,'q2d',0)">Revenue</button></div>
+<div class="qf" id="q2d-f"></div></div>
+
+<div class="cq"><div class="ql">🔢 Calculate</div>
+<p>Machine cost $50,000. Import duty $5,000. Landing charges $2,000. Installation $1,000. Maintenance contract $800/year. <strong>What cost is capitalised?</strong></p>
+<div class="ci"><span>$</span><input type="number" id="c2a"><button onclick="calc('c2a',58000)">Check</button></div>
+<div class="cf" id="c2a-f"></div></div>
+</section>
+
+<!-- ===================== SECTION 3 ===================== -->
+<section class="sec" id="s3">
+<div class="sec-lab"><span class="n">3</span> FOUNDATIONS</div>
+<h2>Why Depreciation?</h2>
+
+<p>You buy a van for <strong>$60,000</strong>, useful for 5 years. If you expense it all in Year 1:</p>
+<ul>
+<li>Year 1: profit looks terrible (huge expense, but van only helped <em>part</em> of the time)</li>
+<li>Years 2–5: you're using the van for free in your accounts. Not fair!</li>
+</ul>
+
+<div class="kc">
+<div class="tg">Matching Principle 相配原則</div>
+<p>Expenses must be matched to the <strong>same period</strong> as the revenue they generate. Van helps earn money for 5 years → spread its cost over 5 years.</p>
+</div>
+
+<div class="kc">
+<div class="tg">Definition</div>
+<p><strong>Depreciation</strong> = the <strong>systematic allocation</strong> of the depreciable amount of an NCA over its estimated useful life.</p>
+<p><em>Plain English: spreading the "used up" cost across all the years the asset works for you.</em></p>
+</div>
+
+<h3>What Causes It?</h3>
+<ol>
+<li><strong>Physical wear &amp; tear</strong> — gets old from use</li>
+<li><strong>Obsolescence</strong> — new technology makes it outdated</li>
+<li><strong>Inadequacy</strong> — business grows, asset is no longer enough</li>
+</ol>
+
+<div class="tip">Depreciation ≠ market value drop. A building may rise in market value, but we still depreciate it — we're allocating cost, not tracking value.</div>
+</section>
+
+<!-- ===================== SECTION 4 ===================== -->
+<section class="sec" id="s4">
+<div class="sec-lab"><span class="n">4</span> FOUNDATIONS</div>
+<h2>Key Terms</h2>
+
+<table class="dt">
+<thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td><strong>Cost</strong></td><td>Total capital expenditure to acquire the NCA</td></tr>
+<tr><td><strong>Residual Value</strong><br>(Scrap / Salvage Value)</td><td>Amount expected when sold/scrapped at end of useful life. If not stated → assume $0</td></tr>
+<tr><td><strong>Depreciable Amount</strong></td><td>The portion that gets "used up"</td></tr>
+<tr><td><strong>Estimated Useful Life</strong></td><td>How many years (or units) the business expects to use it</td></tr>
+<tr><td><strong>Accumulated Depreciation</strong></td><td>Total depreciation charged from purchase to a specific date (grows each year)</td></tr>
+<tr><td><strong>Net Book Value (NBV)</strong><br>(Carrying Amount)</td><td>What's "left" on the books at a specific date</td></tr>
+</tbody>
+</table>
+
+<div class="fm">
+<div class="lb">Key Formulas</div>
+<strong>Depreciable Amount = Cost − Residual Value</strong><br>
+<strong>Net Book Value = Cost − Accumulated Depreciation</strong>
+</div>
+
+<div class="cd nv" style="overflow-x:auto">
+<p><strong>Example:</strong> Machine: cost $10,000 · residual $2,000 · 4-year life</p>
+<p>Depreciable amount = $8,000 → Annual dep = $2,000</p>
+<table class="dt">
+<thead><tr><th>Year End</th><th>Annual Dep.</th><th>Acc. Dep.</th><th>NBV</th></tr></thead>
+<tbody>
+<tr><td>Start</td><td>—</td><td class="ar">$0</td><td class="ar">$10,000</td></tr>
+<tr><td>Yr 1</td><td class="ar">$2,000</td><td class="ar">$2,000</td><td class="ar">$8,000</td></tr>
+<tr><td>Yr 2</td><td class="ar">$2,000</td><td class="ar">$4,000</td><td class="ar">$6,000</td></tr>
+<tr><td>Yr 3</td><td class="ar">$2,000</td><td class="ar">$6,000</td><td class="ar">$4,000</td></tr>
+<tr><td>Yr 4</td><td class="ar">$2,000</td><td class="ar">$8,000</td><td class="ar">$2,000 ✓</td></tr>
+</tbody>
+</table>
+<p style="margin:0">NBV at end = residual value. Perfect! ✅</p>
+</div>
+</section>
+
+<!-- ===================== SECTION 5 ===================== -->
+<section class="sec" id="s5">
+<div class="sec-lab"><span class="n">5</span> METHODS</div>
+<h2>Straight-Line Method</h2>
+
+<div class="kc"><div class="tg">Concept</div>
+<p>Asset generates benefits <strong>evenly</strong> → charge the <strong>same depreciation every year</strong>. Like cutting a pizza into equal slices.</p></div>
+
+<div class="fm"><div class="lb">Formulas</div>
+<strong>Annual Dep = (Cost − Residual Value) ÷ Useful Life</strong><br>
+<strong>Annual Dep = (Cost − Residual Value) × Rate</strong><br>
+<span style="color:var(--o300)">Rate = 100% ÷ Useful Life (e.g. 5 years → 20%)</span>
+</div>
+
+<div class="tip">Exam clue: "X% <strong>on cost</strong>" = straight-line method.</div>
+
+<h3>Example 1: Life &amp; Residual Given</h3>
+<div class="cd or">
+<p>1 Jan 2022: Motor vehicle $6,500. Life: 5 years. Scrap: $500. Straight-line. Year end: 31 Dec.</p>
+</div>
+
+<p><strong>Annual dep</strong> = ($6,500 − $500) ÷ 5 = <strong>$1,200</strong></p>
+
+<table class="dt">
+<thead><tr><th>31 December</th><th>Acc. Dep.</th><th>NBV</th></tr></thead>
+<tbody>
+<tr><td>2022</td><td class="ar">$1,200</td><td class="ar">$5,300</td></tr>
+<tr><td>2023</td><td class="ar">$2,400</td><td class="ar">$4,100</td></tr>
+<tr><td>2024</td><td class="ar">$3,600</td><td class="ar">$2,900</td></tr>
+<tr><td>2025</td><td class="ar">$4,800</td><td class="ar">$1,700</td></tr>
+<tr><td>2026</td><td class="ar">$6,000</td><td class="ar">$500 ✓</td></tr>
+</tbody>
+</table>
+
+<p><strong>Income Statement extract (2022):</strong></p>
+<div class="fs"><div class="fh"><h4>John</h4><h5>Income Statement for year ended 31 Dec 2022 (extract)</h5></div>
+<div class="fy">
+<div class="fr"><span>Less: Expenses</span></div>
+<div class="fr i1"><span>Depreciation: Motor vehicles</span><span class="fa c2">$1,200</span></div>
+</div></div>
+
+<p><strong>SFP extract (2022):</strong></p>
+<div class="fs"><div class="fh"><h4>John</h4><h5>SFP as at 31 Dec 2022 (extract)</h5></div>
+<div class="fy">
+<div class="fhd">Non-current assets</div>
+<div class="fr i1"><span>Motor vehicles</span><span class="fa c2">$6,500</span></div>
+<div class="fr i1"><span>Less: Accumulated depreciation</span><span class="fa c2">(1,200)</span><span class="fa c3">$5,300</span></div>
+</div></div>
+
+<h3>Example 2: Rate Given, No Residual</h3>
+<div class="cd or"><p>Motor vehicle $8,000. 1 Jan 2021. Rate: 25% on cost. No residual mentioned → $0.</p></div>
+<p>Annual dep = $8,000 × 25% = <strong>$2,000</strong>. Life = 100% ÷ 25% = 4 years.</p>
+
+<div class="cq"><div class="ql">🔢 Practice 1</div>
+<p>Equipment $12,500. Life: 4 years. Residual: $5,120. Straight-line. <strong>Annual depreciation?</strong></p>
+<div class="ci"><span>$</span><input type="number" id="c5a"><button onclick="calc('c5a',1845)">Check</button></div>
+<div class="cf" id="c5a-f"></div></div>
+
+<div class="cq"><div class="ql">🔢 Practice 2</div>
+<p>Machine $38,000 + delivery $2,000. Scrap $1,250. Rate: 20% on cost. <strong>Annual depreciation?</strong></p>
+<div class="ci"><span>$</span><input type="number" id="c5b"><button onclick="calc('c5b',7750)">Check</button></div>
+<div class="cf" id="c5b-f"></div></div>
+</section>
+
+<!-- ===================== SECTION 6 ===================== -->
+<section class="sec" id="s6">
+<div class="sec-lab"><span class="n">6</span> METHODS</div>
+<h2>Reducing-Balance Method</h2>
+
+<div class="kc"><div class="tg">Concept</div>
+<p>Apply the rate to the <strong>net book value</strong> (not cost) each year. Since NBV shrinks, depreciation gets <strong>smaller every year</strong>.</p></div>
+
+<div class="fm"><div class="lb">Formula</div>
+<strong>Depreciation = (Cost − Acc. Dep.) × Rate = NBV × Rate</strong>
+</div>
+
+<div class="trap">
+<p><strong>IGNORE the residual value in the calculation.</strong> Just apply rate × NBV. The residual value is NOT subtracted from cost first (unlike straight-line).</p>
+</div>
+
+<div class="tip">Exam clue: "X% on <strong>net book value</strong>" or "on <strong>reducing/diminishing balance</strong>" = this method.</div>
+
+<h3>Worked Example</h3>
+<div class="cd or"><p>Machine $8,000. 1 Jan 2020. Residual: $1,000. Rate: 20% on NBV.</p></div>
+
+<table class="dt">
+<thead><tr><th>Year</th><th>NBV start</th><th>× 20%</th><th>= Depreciation</th><th>Acc. Dep.</th><th>NBV end</th></tr></thead>
+<tbody>
+<tr><td>2020</td><td class="ar">$8,000</td><td></td><td class="ar"><strong>$1,600</strong></td><td class="ar">$1,600</td><td class="ar">$6,400</td></tr>
+<tr><td>2021</td><td class="ar">$6,400</td><td></td><td class="ar"><strong>$1,280</strong></td><td class="ar">$2,880</td><td class="ar">$5,120</td></tr>
+<tr><td>2022</td><td class="ar">$5,120</td><td></td><td class="ar"><strong>$1,024</strong></td><td class="ar">$3,904</td><td class="ar">$4,096</td></tr>
+</tbody>
+</table>
+<p>Pattern: $1,600 → $1,280 → $1,024 — decreasing! ✅</p>
+
+<div class="cq"><div class="ql">🔢 Practice</div>
+<p>Equipment $12,500. Reducing balance 20%. <strong>Depreciation for 2020?</strong> (Year 2, bought 1 Jan 2019)</p>
+<div class="ci"><span>$</span><input type="number" id="c6a"><button onclick="calc('c6a',2000)">Check</button></div>
+<div class="cf" id="c6a-f"></div></div>
+
+<div class="cq"><div class="ql">🔢 Practice</div>
+<p>Car $64,000. Rate: 50% diminishing balance. <strong>Depreciation for 2021?</strong> (Bought 1 Jan 2018)</p>
+<p style="font-size:.82rem;color:var(--g500)">2018: 32,000 → 2019: 16,000 → 2020: 8,000 → 2021: ?</p>
+<div class="ci"><span>$</span><input type="number" id="c6b"><button onclick="calc('c6b',4000)">Check</button></div>
+<div class="cf" id="c6b-f"></div></div>
+</section>
+
+<!-- ===================== SECTION 7 ===================== -->
+<section class="sec" id="s7">
+<div class="sec-lab"><span class="n">7</span> METHODS</div>
+<h2>Usage-Based Method</h2>
+
+<div class="kc"><div class="tg">Concept</div>
+<p>Depreciation based on <strong>actual usage</strong> (units produced, hours, km) rather than time.</p></div>
+
+<div class="fm"><div class="lb">Formula</div>
+<strong>Dep = (Cost − Residual) × (Actual units this year ÷ Total estimated units)</strong>
+</div>
+
+<div class="cd or">
+<p>Machine $12,000. Residual $2,000. Total output: 200,000 units.</p>
+<table class="dt">
+<thead><tr><th>Year</th><th>Units</th><th>Calculation</th><th>Depreciation</th></tr></thead>
+<tbody>
+<tr><td>2015</td><td class="ar">60,000</td><td>$10,000 × 60K/200K</td><td class="ar"><strong>$3,000</strong></td></tr>
+<tr><td>2016</td><td class="ar">50,000</td><td>$10,000 × 50K/200K</td><td class="ar"><strong>$2,500</strong></td></tr>
+<tr><td>2017</td><td class="ar">30,000</td><td>$10,000 × 30K/200K</td><td class="ar"><strong>$1,500</strong></td></tr>
+</tbody>
+</table></div>
+
+<div class="cq"><div class="ql">🔢 Practice</div>
+<p>Machine $40,000. Scrap $1,250. Total: 200,000 units. 2020 output: 40,000. <strong>Dep for 2020?</strong></p>
+<div class="ci"><span>$</span><input type="number" id="c7a"><button onclick="calc('c7a',7750)">Check</button></div>
+<div class="cf" id="c7a-f"></div></div>
+</section>
+
+<!-- ===================== SECTION 8 ===================== -->
+<section class="sec" id="s8">
+<div class="sec-lab"><span class="n">8</span> METHODS</div>
+<h2>Choosing a Method</h2>
+
+<p>Match the method to the <strong>pattern of benefits</strong>:</p>
+<table class="dt">
+<thead><tr><th>Method</th><th>Annual Dep Pattern</th><th>Best For</th></tr></thead>
+<tbody>
+<tr><td><strong>Straight-line</strong></td><td>Same every year</td><td>Even benefit (furniture, premises)</td></tr>
+<tr><td><strong>Reducing balance</strong></td><td>Decreasing</td><td>More useful when new (computers, cars)</td></tr>
+<tr><td><strong>Usage-based</strong></td><td>Varies with usage</td><td>Wear depends on use (factory machines)</td></tr>
+</tbody>
+</table>
+</section>
+
+<!-- ===================== SECTION 9 ===================== -->
+<section class="sec" id="s9">
+<div class="sec-lab"><span class="n">9</span> REAL WORLD</div>
+<h2>Time Apportionment</h2>
+
+<p>Asset bought mid-year? The exam will tell you which policy to use:</p>
+
+<div class="cg">
+<div class="cc a">
+<h4>Policy A: Pro-rata (Monthly Basis)</h4>
+<p>Charge proportionally: annual dep × <strong>months available / 12</strong></p>
+<p><em>Bought 1 April, year end 31 Dec → 9/12</em></p>
+</div>
+<div class="cc b">
+<h4>Policy B: Full Year in Acquisition</h4>
+<p>Full depreciation in year of purchase. <strong>None</strong> in year of disposal.</p>
+</div>
+</div>
+
+<h3>Straight-Line + Time</h3>
+<div class="cd or">
+<p>Machinery $120,000. 1 April 2020. Residual $12,000. Rate: 25% on cost. Year end: 31 Dec.</p>
+<p>Full annual dep = ($120,000 − $12,000) × 25% = $27,000</p>
+<table class="dt">
+<thead><tr><th>Year</th><th>Full Year Policy</th><th>Pro-rata</th></tr></thead>
+<tbody>
+<tr><td>2020</td><td class="ar">$27,000</td><td class="ar">$27,000 × 9/12 = <strong>$20,250</strong></td></tr>
+<tr><td>2021</td><td class="ar">$27,000</td><td class="ar">$27,000</td></tr>
+</tbody>
+</table></div>
+
+<h3>Reducing Balance + Time</h3>
+<div class="cd or">
+<p>Same machine. 20% on NBV. Pro-rata basis.</p>
+<table class="dt">
+<thead><tr><th>Year</th><th>Calculation</th><th>Dep</th></tr></thead>
+<tbody>
+<tr><td>2020</td><td>$120,000 × 20% × <strong>9/12</strong></td><td class="ar"><strong>$18,000</strong></td></tr>
+<tr><td>2021</td><td>($120,000 − $18,000) × 20%</td><td class="ar"><strong>$20,400</strong></td></tr>
+<tr><td>2022</td><td>($120,000 − $18,000 − $20,400) × 20%</td><td class="ar"><strong>$16,320</strong></td></tr>
+</tbody>
+</table></div>
+
+<div class="trap">For reducing balance with pro-rata: only the <em>first year</em> gets the fraction. After that, the partial first year is already baked into the NBV — just apply the full rate to NBV.</div>
+
+<div class="cq"><div class="ql">🔢 Practice</div>
+<p>MV $200,000. 1 Aug 2020. Residual $5,000. Life: 5 yrs. Pro-rata. <strong>SL dep for 2020?</strong> (5 months: Aug–Dec)</p>
+<div class="ci"><span>$</span><input type="number" id="c9a"><button onclick="calc('c9a',16250)">Check</button></div>
+<div class="cf" id="c9a-f"></div></div>
+
+<div class="cq"><div class="ql">🔢 Practice</div>
+<p>Same MV, reducing balance 30%, pro-rata. <strong>Dep for 2021?</strong></p>
+<p style="font-size:.82rem;color:var(--g500)">2020: $200K × 30% × 5/12 = $25,000. Then 2021: ($200K − $25K) × 30% = ?</p>
+<div class="ci"><span>$</span><input type="number" id="c9b"><button onclick="calc('c9b',52500)">Check</button></div>
+<div class="cf" id="c9b-f"></div></div>
+</section>
+
+<!-- ===================== SECTION 10 ===================== -->
+<section class="sec" id="s10">
+<div class="sec-lab"><span class="n">10</span> REAL WORLD</div>
+<h2>Special Cases</h2>
+
+<h3>A. From Given Balances</h3>
+<div class="cd or">
+<p>Given: Premises $120,000. Acc dep $24,000.</p>
+<p>(a) 20% on cost → $120,000 × 20% = <strong>$24,000</strong></p>
+<p>(b) 10% on NBV → ($120,000 − $24,000) × 10% = <strong>$9,600</strong></p>
+</div>
+
+<h3>B. Multiple Groups (Different Purchase Dates)</h3>
+<p>Calculate <strong>separately in the year with different history</strong>, then pool together afterwards.</p>
+<div class="cd or">
+<p>Van A: $72,000 on 1 Apr 2020. Van B: $45,000 on 1 Jul 2020. Rate: 20% on cost, pro-rata.</p>
+<table class="dt">
+<thead><tr><th>Year</th><th>Van A</th><th>Van B</th><th>Total</th></tr></thead>
+<tbody>
+<tr><td>2020</td><td class="ar">$72K×20%×9/12</td><td class="ar">$45K×20%×6/12</td><td class="ar"><strong>$15,300</strong></td></tr>
+<tr><td>2021+</td><td colspan="2" class="ar">($72K+$45K)×20% = same</td><td class="ar"><strong>$23,400</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>For <strong>reducing balance</strong> with multiple groups: after the first year, combine NBVs and calculate together.</p>
+
+<h3>C. When Does Depreciation Start?</h3>
+<div class="kc"><div class="tg">Rule</div>
+<p>Depreciation starts when the NCA is <strong>available for use</strong> — not ordered, not delivered, but <strong>ready to use</strong> (e.g., assembly/testing complete).</p></div>
+
+<div class="cd or">
+<p>Ordered 1 Jan → arrived 1 Feb → assembled & tested by <strong>1 March</strong> → paid 1 April.</p>
+<p>Start date: <strong>1 March</strong>. For year end 31 Dec → 10/12 of annual dep.</p>
+</div>
+
+<h3>D. Fully Depreciated NCAs</h3>
+<div class="kc"><div class="tg">Rule</div>
+<p>Once NBV reaches the residual value → <strong>stop depreciating</strong>. Asset stays on books at residual value until disposal.</p></div>
+
+<div class="cd or">
+<p>Machine $18,000. Zero residual. 6-year life. Dep = $3,000/yr for 2015–2020. Still in use in 2021.</p>
+<table class="dt">
+<thead><tr><th></th><th>2020</th><th>2021</th></tr></thead>
+<tbody>
+<tr><td>I/S: Depreciation</td><td class="ar">$3,000</td><td class="ar"><strong>$0</strong></td></tr>
+<tr><td>SFP: Machine</td><td class="ar">$18,000</td><td class="ar">$18,000</td></tr>
+<tr><td>Less: Acc dep</td><td class="ar">(18,000)</td><td class="ar">(18,000)</td></tr>
+<tr><td>NBV</td><td class="ar">$0</td><td class="ar">$0</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- ===================== SECTION 11 ===================== -->
+<section class="sec" id="s11">
+<div class="sec-lab"><span class="n">11</span> RECORDING</div>
+<h2>Double Entry for Depreciation</h2>
+
+<div class="jb"><div class="jt">Annual Depreciation Entry</div>
+<table class="jj">
+<thead><tr><th>Date</th><th>Account</th><th>Dr</th><th>Cr</th></tr></thead>
+<tbody>
+<tr><td>Dec 31</td><td><strong>Depreciation: NCA</strong> <span class="nt">[Expense → I/S]</span></td><td class="am">X</td><td></td></tr>
+<tr><td></td><td class="ind"><strong>Accumulated dep: NCA</strong> <span class="nt">[Contra asset → SFP]</span></td><td></td><td class="am">X</td></tr>
+</tbody>
+</table></div>
+
+<div class="two">
+<div class="cd bl">
+<h4>Dr: Depreciation: NCA</h4>
+<p><strong>Expense</strong> account → I/S. This year's cost only. Closed to P&L at year end.</p>
+</div>
+<div class="cd gr">
+<h4>Cr: Acc. Dep: NCA</h4>
+<p><strong>Contra-asset</strong> → SFP. Accumulates year after year. Balance carries forward.</p>
+</div>
+</div>
+
+<div class="tip">Why not credit the asset directly? Because we want to <strong>keep the original cost visible</strong>. Showing Cost − Acc Dep = NBV gives users more information.</div>
+</section>
+
+<!-- ===================== SECTION 12 ===================== -->
+<section class="sec" id="s12">
+<div class="sec-lab"><span class="n">12</span> RECORDING</div>
+<h2>Ledger Accounts &amp; Financial Statements</h2>
+
+<p>Machine: $18,000. Zero residual. 6-year life. SL. Annual dep = <strong>$3,000</strong>.</p>
+
+<h3>T-Accounts</h3>
+
+<div class="ta"><div class="tt">Machinery</div>
+<div class="tb">
+<div class="tl">
+<div class="tw"><span class="td">2021 Jan 1</span><span class="tn">Cash</span><span class="tv">18,000</span></div>
+<div class="tg"></div>
+<div class="tw"><span class="td">2022 Jan 1</span><span class="tn">Balance b/d</span><span class="tv">18,000</span></div>
+</div>
+<div class="tr">
+<div class="tw"><span class="td">2021 Dec 31</span><span class="tn">Balance c/d</span><span class="tv">18,000</span></div>
+<div class="tg"></div>
+<div class="tw"><span class="td">2022 Dec 31</span><span class="tn">Balance c/d</span><span class="tv">18,000</span></div>
+</div>
+</div></div>
+
+<div class="ta"><div class="tt">Depreciation: Machinery</div>
+<div class="tb">
+<div class="tl">
+<div class="tw"><span class="td">2021 Dec 31</span><span class="tn">Acc dep: Mach</span><span class="tv">3,000</span></div>
+<div class="tg"></div>
+<div class="tw"><span class="td">2022 Dec 31</span><span class="tn">Acc dep: Mach</span><span class="tv">3,000</span></div>
+</div>
+<div class="tr">
+<div class="tw"><span class="td">2021 Dec 31</span><span class="tn">Profit & loss</span><span class="tv">3,000</span></div>
+<div class="tg"></div>
+<div class="tw"><span class="td">2022 Dec 31</span><span class="tn">Profit & loss</span><span class="tv">3,000</span></div>
+</div>
+</div></div>
+
+<div class="ta"><div class="tt">Accumulated Depreciation: Machinery</div>
+<div class="tb">
+<div class="tl">
+<div class="tw"><span class="td">2021 Dec 31</span><span class="tn">Balance c/d</span><span class="tv">3,000</span></div>
+<div class="tg"></div>
+<div class="tw"><span class="td">2022 Dec 31</span><span class="tn">Balance c/d</span><span class="tv">6,000</span></div>
+<div class="to">6,000</div>
+</div>
+<div class="tr">
+<div class="tw"><span class="td">2021 Dec 31</span><span class="tn">Depreciation</span><span class="tv">3,000</span></div>
+<div class="tg"></div>
+<div class="tw"><span class="td">2022 Jan 1</span><span class="tn">Balance b/d</span><span class="tv">3,000</span></div>
+<div class="tw"><span class="td">2022 Dec 31</span><span class="tn">Depreciation</span><span class="tv">3,000</span></div>
+<div class="to">6,000</div>
+</div>
+</div></div>
+
+<h3>Preparing AD Account Mid-Way</h3>
+<p>Same machine purchased 1 Jan <strong>2019</strong>. Prepare AD account for <strong>2022</strong>:</p>
+<p>Opening balance = $3,000 × 3 years = <strong>$9,000</strong></p>
+
+<div class="ta"><div class="tt">Acc Dep: Machinery (2022)</div>
+<div class="tb">
+<div class="tl">
+<div class="tw"><span class="td">Dec 31</span><span class="tn">Balance c/d</span><span class="tv">12,000</span></div>
+<div class="to">12,000</div>
+</div>
+<div class="tr">
+<div class="tw"><span class="td">Jan 1</span><span class="tn">Balance b/d</span><span class="tv">9,000</span></div>
+<div class="tw"><span class="td">Dec 31</span><span class="tn">Depreciation</span><span class="tv">3,000</span></div>
+<div class="to">12,000</div>
+</div>
+</div></div>
+
+<hr class="sep">
+
+<h3>Full Financial Statement Example</h3>
+<div class="cd or"><div class="el">COMPREHENSIVE EXAMPLE</div>
+<p><strong>John's Trial Balance as at 31 March 2020</strong></p>
+<p>Office equip $150,000 (AD: $30,000) · Furn & fittings $120,000 (AD: $36,000)</p>
+<p><strong>Additional info:</strong> Closing inv $190,000. Accrued wages $12,000. Prepaid rent $16,000.</p>
+<p>Dep: Office equip <strong>20% on cost</strong>. Furn & fittings <strong>30% on NBV</strong>.</p>
+</div>
+
+<p><strong>Calculations:</strong></p>
+<ul>
+<li>Office equip: $150,000 × 20% = <strong>$30,000</strong> (straight-line)</li>
+<li>Furn & fittings: ($120,000 − $36,000) × 30% = <strong>$25,200</strong> (reducing balance)</li>
+</ul>
+
+<div class="rv">
+<button class="rb" onclick="reveal('r12a')">👁 Show Income Statement</button>
+<div class="rc" id="r12a">
+<div class="fs"><div class="fh"><h4>John</h4><h5>Income Statement for year ended 31 March 2020</h5></div>
+<div class="fy">
+<div class="fr"><span>Sales</span><span class="fa c3">1,083,000</span></div>
+<div class="fr"><span>Less: Cost of goods sold</span></div>
+<div class="fr i1"><span>Opening inventory</span><span class="fa c2">170,000</span></div>
+<div class="fr i1"><span>Add: Purchases</span><span class="fa c2">780,000</span></div>
+<div class="fr i1"><span>Less: Returns outwards</span><span class="fa c2">(24,000)</span></div>
+<div class="fr i1"><span>Less: Closing inventory</span><span class="fa c2">(190,000)</span></div>
+<div class="fr st"><span></span><span class="fa c3">(736,000)</span></div>
+<div class="fr ft"><span>Gross profit</span><span class="fa c3">347,000</span></div>
+<div class="fr"><span>Add: Discount received</span><span class="fa c3">3,200</span></div>
+<div class="fr st"><span></span><span class="fa c3">350,200</span></div>
+<div class="fr"><span>Less: Expenses</span></div>
+<div class="fr i1"><span>Wages ($88K + $12K)</span><span class="fa c2">100,000</span></div>
+<div class="fr i1"><span>Rent ($96K − $16K)</span><span class="fa c2">80,000</span></div>
+<div class="fr i1"><span>Misc. expenses</span><span class="fa c2">5,200</span></div>
+<div class="fr i1"><span>Dep: Office equipment</span><span class="fa c2">30,000</span></div>
+<div class="fr i1"><span>Dep: Furn & fittings</span><span class="fa c2">25,200</span></div>
+<div class="fr st"><span></span><span class="fa c3">(240,400)</span></div>
+<div class="fr dl"><span><strong>Net profit</strong></span><span class="fa c3"><strong>109,800</strong></span></div>
+</div></div>
+</div></div>
+
+<div class="rv">
+<button class="rb" onclick="reveal('r12b')">👁 Show SFP</button>
+<div class="rc" id="r12b">
+<div class="fs"><div class="fh"><h4>John</h4><h5>SFP as at 31 March 2020</h5></div>
+<div class="fy">
+<div class="fhd">ASSETS</div>
+<div class="fhd" style="font-size:.84rem">Non-current assets</div>
+<div class="fr i1"><span>Office equipment</span><span class="fa c2">150,000</span></div>
+<div class="fr i1"><span>Less: Acc dep ($30K+$30K)</span><span class="fa c2">(60,000)</span><span class="fa c3">90,000</span></div>
+<div class="fr i1"><span>Furn & fittings</span><span class="fa c2">120,000</span></div>
+<div class="fr i1"><span>Less: Acc dep ($36K+$25.2K)</span><span class="fa c2">(61,200)</span><span class="fa c3">58,800</span></div>
+<div class="fr st"><span></span><span class="fa c3">148,800</span></div>
+<div class="fhd" style="font-size:.84rem">Current assets</div>
+<div class="fr i1"><span>Inventory</span><span class="fa c3">190,000</span></div>
+<div class="fr i1"><span>Trade receivables</span><span class="fa c3">47,800</span></div>
+<div class="fr i1"><span>Prepaid expenses</span><span class="fa c3">16,000</span></div>
+<div class="fr i1"><span>Bank</span><span class="fa c3">30,000</span></div>
+<div class="fr st"><span></span><span class="fa c3">283,800</span></div>
+<div class="fr dl"><span><strong>Total assets</strong></span><span class="fa c3"><strong>432,600</strong></span></div>
+<div class="fhd">CAPITAL AND LIABILITIES</div>
+<div class="fr i1"><span>Capital — 1 Apr 2019</span><span class="fa c2">300,000</span></div>
+<div class="fr i1"><span>Add: Net profit</span><span class="fa c2">109,800</span></div>
+<div class="fr i1"><span>Less: Drawings</span><span class="fa c2">(40,000)</span></div>
+<div class="fr st"><span></span><span class="fa c3">369,800</span></div>
+<div class="fr i1"><span>Trade payables</span><span class="fa c2">50,800</span></div>
+<div class="fr i1"><span>Accrued expenses</span><span class="fa c2">12,000</span></div>
+<div class="fr st"><span></span><span class="fa c3">62,800</span></div>
+<div class="fr dl"><span><strong>Total capital & liabilities</strong></span><span class="fa c3"><strong>432,600</strong></span></div>
+</div></div>
+</div></div>
+
+<div class="kc"><div class="tg">SFP Key Formula</div>
+<p><strong>Acc dep on SFP = TB balance + this year's depreciation (from I/S)</strong></p>
+</div>
+</section>
+
+<!-- ===================== SECTION 13 ===================== -->
+<section class="sec" id="s13">
+<div class="sec-lab"><span class="n">13</span> ADVANCED</div>
+<h2>Improvements to Existing NCAs</h2>
+
+<p>When <strong>capital expenditure</strong> is made on an existing NCA (improvement, not just repair):</p>
+<ol>
+<li><strong>Add</strong> the improvement cost to the NCA</li>
+<li><strong>Recalculate</strong> depreciation for the remaining useful life</li>
+</ol>
+
+<div class="fm"><div class="lb">After Improvement (Straight-Line)</div>
+<strong>New annual dep = (NBV after improvement − Revised residual value) ÷ Remaining useful life</strong><br>
+<span style="color:var(--o300)">Where NBV after improvement = old NBV + cost of improvement</span>
+</div>
+
+<h3>Example 1: Extending Useful Life</h3>
+<div class="cd or">
+<p>Motor van $60,000. 1 Jan 2021. SL. Life: 4 yrs. Residual: $10,000. Dep = ($60K−$10K)÷4 = <strong>$12,500/yr</strong></p>
+<p>On <strong>1 Jan 2023</strong>, $5,000 spent on enhancement. Residual stays $10,000. Life <strong>extended by 1 year</strong>.</p>
+</div>
+
+<table class="dt">
+<thead><tr><th>Year</th><th>Calculation</th><th>Dep</th><th>Cost</th><th>Acc Dep</th><th>NBV</th></tr></thead>
+<tbody>
+<tr><td>2021</td><td>Normal</td><td class="ar">$12,500</td><td class="ar">$60,000</td><td class="ar">$12,500</td><td class="ar">$47,500</td></tr>
+<tr><td>2022</td><td>Normal</td><td class="ar">$12,500</td><td class="ar">$60,000</td><td class="ar">$25,000</td><td class="ar">$35,000</td></tr>
+<tr><td>2023</td><td style="font-size:.8rem">($35K+$5K−$10K)÷(4−2+1)</td><td class="ar"><strong>$10,000</strong></td><td class="ar">$65,000</td><td class="ar">$35,000</td><td class="ar">$30,000</td></tr>
+<tr><td>2024</td><td>Same</td><td class="ar">$10,000</td><td class="ar">$65,000</td><td class="ar">$45,000</td><td class="ar">$20,000</td></tr>
+<tr><td>2025</td><td>Same</td><td class="ar">$10,000</td><td class="ar">$65,000</td><td class="ar">$55,000</td><td class="ar">$10,000 ✓</td></tr>
+</tbody>
+</table>
+
+<p><strong>How the 2023 depreciation works:</strong></p>
+<ul>
+<li>NBV before improvement = $35,000</li>
+<li>+ Improvement = $5,000 → NBV after = $40,000</li>
+<li>Revised residual = $10,000 (unchanged)</li>
+<li>Remaining life = original 4 − 2 used + 1 extended = <strong>3 years</strong></li>
+<li>New dep = ($40,000 − $10,000) ÷ 3 = <strong>$10,000</strong></li>
+</ul>
+
+<h3>Example 2: Change in Residual + Extended Life</h3>
+<div class="cd or">
+<p>Same van. On 1 Jan 2023, $5,000 spent. Residual <strong>decreased by $2,500</strong> (now $7,500). Life <strong>extended by 2 years</strong>.</p>
+</div>
+<p>New dep = ($35,000 + $5,000 − $7,500) ÷ (4 − 2 + 2) = $32,500 ÷ 4 = <strong>$8,125</strong></p>
+<p>NBV at end of 2026 = $65,000 − $25,000 − $8,125×4 = <strong>$7,500</strong> ✓ (= new residual)</p>
+
+<h3>Example 3: No Change in Residual or Life</h3>
+<div class="cd or">
+<p>Same van. On 1 Jan 2023, $5,000 spent. Remaining life and residual <strong>unchanged</strong>.</p>
+</div>
+<p>New dep = ($35,000 + $5,000 − $10,000) ÷ (4 − 2) = $30,000 ÷ 2 = <strong>$15,000</strong></p>
+
+<div class="tip">
+<p><strong>Shortcut</strong> (only when no change in RV or remaining life): treat improvement as a separate NCA with the same remaining life:</p>
+<p>$12,500 (existing) + $5,000 ÷ 2 (new) = <strong>$15,000</strong> ✓</p>
+</div>
+</section>
+
+<!-- ===================== SECTION 14 ===================== -->
+<section class="sec" id="s14">
+<div class="sec-lab"><span class="n">14</span> DISPOSAL</div>
+<h2>Disposal of Non-Current Assets</h2>
+
+<p>A business may sell an NCA <strong>before, at, or after</strong> the end of its useful life. The key idea:</p>
+
+<div class="kc"><div class="tg">Core Concept</div>
+<p><strong>Profit on disposal</strong> = Proceeds &gt; NBV → goes to I/S as other revenue<br>
+<strong>Loss on disposal</strong> = Proceeds &lt; NBV → goes to I/S as expense</p>
+<p class="mono" style="margin:8px 0 0">NBV at disposal = Cost − Acc. Depreciation to disposal date</p>
+</div>
+
+<p>We use a temporary <strong>Disposal account</strong> to bring everything together.</p>
+
+<h3>4 Steps of Disposal</h3>
+
+<table class="dt">
+<thead><tr><th>Step</th><th>What</th><th>Dr</th><th>Cr</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>Transfer cost out</td><td>Disposal</td><td>NCA (at cost)</td></tr>
+<tr><td><strong>2</strong></td><td>Transfer acc dep out</td><td>Acc dep: NCA</td><td>Disposal</td></tr>
+<tr><td><strong>3</strong></td><td>Record proceeds</td><td>Cash/Bank/Receivable</td><td>Disposal</td></tr>
+<tr><td><strong>4</strong></td><td>Balance = profit or loss</td><td>Loss on disposal <em>OR</em></td><td>Disposal</td></tr>
+<tr><td></td><td></td><td>Disposal</td><td>Profit on disposal</td></tr>
+</tbody>
+</table>
+
+<h3>Worked Example</h3>
+<div class="cd or">
+<p>Motor van cost $60,000. Bought 1 Jul 2018. Life: 4 years. Scrap: $12,000. SL. Year end: 31 Dec.</p>
+<p>Annual dep = ($60K − $12K) ÷ 4 = $12,000</p>
+<p>Acc dep at 1 Jan 2020 = $12,000 × 1.5 years = <strong>$18,000</strong>. NBV = $42,000.</p>
+</div>
+
+<h4>Case 1: Sold for $40,000 cash → Loss $2,000</h4>
+
+<div class="jb"><div class="jt">Journal — Loss on Disposal</div>
+<table class="jj">
+<thead><tr><th>Date</th><th>Account</th><th>Dr ($)</th><th>Cr ($)</th></tr></thead>
+<tbody>
+<tr><td>Jan 1</td><td><strong>Disposal: MV</strong></td><td class="am">60,000</td><td></td></tr>
+<tr><td></td><td class="ind">Motor vans</td><td></td><td class="am">60,000</td></tr>
+<tr><td>Jan 1</td><td><strong>Acc dep: MV</strong></td><td class="am">18,000</td><td></td></tr>
+<tr><td></td><td class="ind">Disposal: MV</td><td></td><td class="am">18,000</td></tr>
+<tr><td>Jan 1</td><td><strong>Cash</strong></td><td class="am">40,000</td><td></td></tr>
+<tr><td></td><td class="ind">Disposal: MV</td><td></td><td class="am">40,000</td></tr>
+<tr><td>Jan 1</td><td><strong>Loss on disposal: MV</strong></td><td class="am">2,000</td><td></td></tr>
+<tr><td></td><td class="ind">Disposal: MV</td><td></td><td class="am">2,000</td></tr>
+</tbody>
+</table></div>
+
+<h4>Case 2: Sold for $50,000 cash → Profit $8,000</h4>
+<p>Same first 3 steps, but step 4:</p>
+<div class="jb"><div class="jt">Step 4 — Profit</div>
+<table class="jj">
+<tbody>
+<tr><td>Jan 1</td><td><strong>Disposal: MV</strong></td><td class="am">8,000</td><td></td></tr>
+<tr><td></td><td class="ind">Profit on disposal: MV</td><td></td><td class="am">8,000</td></tr>
+</tbody>
+</table></div>
+
+<div class="tip">
+<p><strong>Composite journal entry</strong> (alternative — all in one):</p>
+<p>Dr Acc dep: MV 18,000 · Dr Cash 40,000 · Dr Loss on disposal 2,000 · Cr Motor vans 60,000</p>
+</div>
+</section>
+
+<!-- ===================== SECTION 15 ===================== -->
+<section class="sec" id="s15">
+<div class="sec-lab"><span class="n">15</span> DISPOSAL</div>
+<h2>Disposal — T-Accounts &amp; More</h2>
+
+<h3>T-Account Example</h3>
+<div class="cd or">
+<p>Machine $120,000 bought 1 Apr 2018. Zero residual. 20% on NBV. Full year in acquisition, none in disposal.</p>
+<p>Dep 2018/19: $120K × 20% = $24,000. Dep 2019/20: $96K × 20% = $19,200. AD = $43,200.</p>
+<p>Dep 2020/21 = $0 (none in year of disposal). Sold 1 Jun 2020 for $80,000 by cheque.</p>
+</div>
+
+<h4>Case 1: Profit on disposal (sold for $80,000)</h4>
+<p>NBV = $76,800. Proceeds = $80,000. Profit = $3,200.</p>
+
+<div class="ta"><div class="tt">Disposal: Machinery</div>
+<div class="tb">
+<div class="tl">
+<div class="tw"><span class="td">Jun 1</span><span class="tn">Machinery</span><span class="tv">120,000</span></div>
+<div class="tw"><span class="td"></span><span class="tn">Profit on disposal</span><span class="tv">3,200</span></div>
+<div class="to">123,200</div>
+</div>
+<div class="tr">
+<div class="tw"><span class="td">Jun 1</span><span class="tn">Acc dep: Mach</span><span class="tv">43,200</span></div>
+<div class="tw"><span class="td">Jun 1</span><span class="tn">Bank</span><span class="tv">80,000</span></div>
+<div class="to">123,200</div>
+</div>
+</div></div>
+
+<p>I/S extract: <strong>Other revenue — Profit on disposal: Machinery $3,200</strong></p>
+
+<h4>Case 2: Loss on disposal (sold for $20,000)</h4>
+
+<div class="ta"><div class="tt">Disposal: Machinery</div>
+<div class="tb">
+<div class="tl">
+<div class="tw"><span class="td">Jun 1</span><span class="tn">Machinery</span><span class="tv">120,000</span></div>
+<div class="to">120,000</div>
+</div>
+<div class="tr">
+<div class="tw"><span class="td">Jun 1</span><span class="tn">Acc dep: Mach</span><span class="tv">43,200</span></div>
+<div class="tw"><span class="td">Jun 1</span><span class="tn">Bank</span><span class="tv">20,000</span></div>
+<div class="tw"><span class="td">Jun 1</span><span class="tn">Loss on disposal</span><span class="tv">56,800</span></div>
+<div class="to">120,000</div>
+</div>
+</div></div>
+
+<p>I/S extract: <strong>Expenses — Loss on disposal: Machinery $56,800</strong></p>
+
+<hr class="sep">
+
+<h3>Disposal on Credit</h3>
+<p>If sold on credit, replace Cash/Bank with <strong>Other receivable</strong>. Everything else is the same.</p>
+
+<h3>Disposal Expenses</h3>
+<div class="cd or">
+<p>Sold machine for $30,000 cash but paid $4,000 to repair it before sale.</p>
+<p>The repair cost goes to the <strong>Dr side of Disposal</strong> (reduces net proceeds).</p>
+</div>
+
+<h3>Disposal with Pro-Rata Depreciation</h3>
+<div class="cd or">
+<p>Machine $400,000, bought 1 Jul 2018. 40% reducing balance, pro-rata. Year end 30 Jun. Sold 1 Jun 2021.</p>
+<p>Dep 2018/19: $400K × 40% = $160,000<br>
+Dep 2019/20: $240K × 40% = $96,000<br>
+Dep 2020/21: $144K × 40% × <strong>11/12</strong> = $52,800</p>
+<p>AD at disposal = $160K + $96K + $52.8K = $308,800</p>
+</div>
+<p>The 2020/21 dep is <strong>11 months</strong> (Jul 2020 to May 2021) — need to record this dep <em>before</em> removing the asset.</p>
+
+<h3>Disposing Only PART of the Assets</h3>
+<div class="cd or">
+<p>Two vans at $120,000 each. Bought 1 Jan 2018. 20% on cost. One damaged and sold 1 Oct 2021 for $35,000.</p>
+<p>AD for both up to 31 Dec 2020: $120K × 2 × 20% × 3 = $144,000</p>
+<p>In 2021: disposed van gets 9/12 dep = $120K × 20% × 9/12 = $18,000</p>
+<p>Remaining van gets full year = $120K × 20% = $24,000</p>
+<p>AD of disposed van = $144K ÷ 2 + $18K = $90,000. NBV = $30,000.</p>
+<p>Proceeds = $35,000 → <strong>Profit $5,000</strong></p>
+</div>
+</section>
+
+<!-- ===================== SECTION 16 ===================== -->
+<section class="sec" id="s16">
+<div class="sec-lab"><span class="n">16</span> DISPOSAL</div>
+<h2>Trade-In Disposal 以舊易新</h2>
+
+<p>Give old NCA + pay the difference → get a new NCA. The <strong>trade-in value</strong> (回收價) reduces what you pay.</p>
+
+<div class="fm"><div class="lb">Key Formula</div>
+<strong>Cash paid = Cost of new NCA − Trade-in value of old NCA</strong>
+</div>
+
+<h3>4 Steps</h3>
+<table class="dt">
+<thead><tr><th>Step</th><th>Dr</th><th>Cr</th></tr></thead>
+<tbody>
+<tr><td>1. Transfer old cost</td><td>Disposal</td><td>NCA (old cost)</td></tr>
+<tr><td>2. Transfer old AD</td><td>Acc dep</td><td>Disposal</td></tr>
+<tr><td>3. Record new NCA</td><td>NCA (new cost)</td><td>Disposal (trade-in value) + Cash (balance)</td></tr>
+<tr><td>4. Profit/Loss</td><td colspan="2">Same as normal disposal</td></tr>
+</tbody>
+</table>
+
+<h3>Worked Example</h3>
+<div class="cd or">
+<p>Machine $50,000 bought 2018. 20% on cost, full year acq/none disposal. Year end 31 Dec.</p>
+<p>1 Mar 2020: traded in for new machine. Trade-in value: $27,000. New machine list price: $80,000.</p>
+<p>AD = $50K × 20% × 2 = $20,000. NBV = $30,000. Trade-in = $27,000 → <strong>Loss $3,000</strong>.</p>
+<p>Cash paid = $80,000 − $27,000 = $53,000.</p>
+</div>
+
+<div class="jb"><div class="jt">Journal — Trade-In</div>
+<table class="jj">
+<thead><tr><th>Date</th><th>Account</th><th>Dr ($)</th><th>Cr ($)</th></tr></thead>
+<tbody>
+<tr><td>Mar 1</td><td><strong>Disposal: Machinery</strong></td><td class="am">50,000</td><td></td></tr>
+<tr><td></td><td class="ind">Machinery (old)</td><td></td><td class="am">50,000</td></tr>
+<tr><td>Mar 1</td><td><strong>Acc dep: Machinery</strong></td><td class="am">20,000</td><td></td></tr>
+<tr><td></td><td class="ind">Disposal: Machinery</td><td></td><td class="am">20,000</td></tr>
+<tr><td>Mar 1</td><td><strong>Machinery (new)</strong></td><td class="am">80,000</td><td></td></tr>
+<tr><td></td><td class="ind">Disposal: Machinery</td><td></td><td class="am">27,000</td></tr>
+<tr><td></td><td class="ind">Bank</td><td></td><td class="am">53,000</td></tr>
+<tr><td>Mar 1</td><td><strong>Loss on disposal</strong></td><td class="am">3,000</td><td></td></tr>
+<tr><td></td><td class="ind">Disposal: Machinery</td><td></td><td class="am">3,000</td></tr>
+</tbody>
+</table></div>
+
+<h3>T-Accounts After Trade-In</h3>
+
+<div class="ta"><div class="tt">Machinery</div>
+<div class="tb">
+<div class="tl">
+<div class="tw"><span class="td">Jan 1</span><span class="tn">Bal b/d (old)</span><span class="tv">50,000</span></div>
+<div class="tw"><span class="td">Mar 1</span><span class="tn">Disposal (trade-in)</span><span class="tv">27,000</span></div>
+<div class="tw"><span class="td">Mar 1</span><span class="tn">Bank</span><span class="tv">53,000</span></div>
+<div class="to">130,000</div>
+</div>
+<div class="tr">
+<div class="tw"><span class="td">Mar 1</span><span class="tn">Disposal (old)</span><span class="tv">50,000</span></div>
+<div class="tw"><span class="td">Dec 31</span><span class="tn">Balance c/d</span><span class="tv">80,000</span></div>
+<div class="to">130,000</div>
+</div>
+</div></div>
+
+<p><strong>SFP shows new machine at cost $80,000</strong> (= trade-in $27K + cash $53K)</p>
+<p>New dep for rest of year: $80,000 × 20% = <strong>$16,000</strong></p>
+
+<div class="cq"><div class="ql">🔢 Practice</div>
+<p>Old machine cost $90,000. AD: $54,000. Trade-in value: $40,000. <strong>Profit or loss, and how much?</strong></p>
+<p style="font-size:.82rem;color:var(--g500)">NBV = $90K − $54K = $36K. Trade-in = $40K. Difference?</p>
+<div class="ci"><span>Profit $</span><input type="number" id="c16a"><button onclick="calc('c16a',4000)">Check</button></div>
+<div class="cf" id="c16a-f"></div></div>
+</section>
+
+<!-- ===================== SECTION 17 ===================== -->
+<section class="sec" id="s17">
+<div class="sec-lab"><span class="n">17</span> GRAND FINALE</div>
+<h2>Comprehensive Problem</h2>
+
+<div class="cd or"><div class="el">EXAM-STYLE QUESTION</div>
+<p><strong>John's TB as at 31 March 2024</strong> includes:</p>
+<ul style="font-size:.88rem">
+<li>Office equipment $150,000 (AD: $30,000)</li>
+<li>Furniture & fittings $120,000 (AD: $36,000)</li>
+<li>Wages $93,200 · Rent $96,000 · Sales $1,083,000 · Purchases $780,000</li>
+<li>Returns out $24,000 · Opening inv $170,000 · Receivables $47,800 · Payables $50,800</li>
+<li>Discount received $3,200 · Capital $300,000 · Drawings $40,000 · Bank $30,000</li>
+</ul>
+<p><strong>Additional info:</strong></p>
+<ol style="font-size:.88rem">
+<li>Closing inventory: $190,000</li>
+<li>Accrued wages: $12,000</li>
+<li>Prepaid rent: $16,000</li>
+<li>Office equip bought for $20,000 in May 2021 was <strong>scrapped (zero value)</strong> on 30 Sep 2023. <strong>No entry made.</strong></li>
+<li>Dep: OE at 20% on cost, F&F at 30% on NBV. Full year acquisition, none in disposal.</li>
+</ol>
+</div>
+
+<h3>Working Through the Disposal</h3>
+<p>The unrecorded scrapping is the tricky part. Let's handle it:</p>
+<ul>
+<li>Scrapped item: cost $20,000, bought May 2021</li>
+<li>AD on scrapped item: $20,000 × 20% × 2 years (2021/22 and 2022/23) = <strong>$8,000</strong></li>
+<li>NBV = $20,000 − $8,000 = $12,000. Proceeds = $0.</li>
+<li><strong>Loss on disposal = $12,000</strong></li>
+</ul>
+
+<p><strong>Depreciation for remaining OE:</strong> ($150,000 − $20,000) × 20% = <strong>$26,000</strong></p>
+<p><strong>Dep for F&F:</strong> ($120,000 − $36,000) × 30% = <strong>$25,200</strong></p>
+
+<div class="rv">
+<button class="rb" onclick="reveal('r17a')">👁 Show Income Statement</button>
+<div class="rc" id="r17a">
+<div class="fs"><div class="fh"><h4>John</h4><h5>Income Statement for year ended 31 March 2024</h5></div>
+<div class="fy">
+<div class="fr"><span>Sales</span><span class="fa c3">1,083,000</span></div>
+<div class="fr"><span>Less: COGS</span></div>
+<div class="fr i1"><span>Opening inventory</span><span class="fa c2">170,000</span></div>
+<div class="fr i1"><span>+ Purchases</span><span class="fa c2">780,000</span></div>
+<div class="fr i1"><span>− Returns out</span><span class="fa c2">(24,000)</span></div>
+<div class="fr i1"><span>− Closing inventory</span><span class="fa c2">(190,000)</span></div>
+<div class="fr st"><span></span><span class="fa c3">(736,000)</span></div>
+<div class="fr ft"><span>Gross profit</span><span class="fa c3">347,000</span></div>
+<div class="fr"><span>+ Discount received</span><span class="fa c3">3,200</span></div>
+<div class="fr st"><span></span><span class="fa c3">350,200</span></div>
+<div class="fr"><span>Less: Expenses</span></div>
+<div class="fr i1"><span>Wages ($93.2K + $12K)</span><span class="fa c2">105,200</span></div>
+<div class="fr i1"><span>Rent ($96K − $16K)</span><span class="fa c2">80,000</span></div>
+<div class="fr i1"><span>Loss on disposal: OE</span><span class="fa c2">12,000</span></div>
+<div class="fr i1"><span>Dep: Office equipment</span><span class="fa c2">26,000</span></div>
+<div class="fr i1"><span>Dep: Furn & fittings</span><span class="fa c2">25,200</span></div>
+<div class="fr st"><span></span><span class="fa c3">(248,400)</span></div>
+<div class="fr dl"><span><strong>Net profit</strong></span><span class="fa c3"><strong>101,800</strong></span></div>
+</div></div>
+</div></div>
+
+<div class="rv">
+<button class="rb" onclick="reveal('r17b')">👁 Show SFP</button>
+<div class="rc" id="r17b">
+<div class="fs"><div class="fh"><h4>John</h4><h5>SFP as at 31 March 2024</h5></div>
+<div class="fy">
+<div class="fhd">ASSETS</div>
+<div class="fhd" style="font-size:.84rem">Non-current assets</div>
+<div class="fr i1"><span>Office equip ($150K − $20K)</span><span class="fa c2">130,000</span></div>
+<div class="fr i1"><span>Less: Acc dep (W)</span><span class="fa c2">(48,000)</span><span class="fa c3">82,000</span></div>
+<div class="fr i1"><span>Furn & fittings</span><span class="fa c2">120,000</span></div>
+<div class="fr i1"><span>Less: Acc dep ($36K+$25.2K)</span><span class="fa c2">(61,200)</span><span class="fa c3">58,800</span></div>
+<div class="fr st"><span></span><span class="fa c3">140,800</span></div>
+<div class="fhd" style="font-size:.84rem">Current assets</div>
+<div class="fr i1"><span>Inventory</span><span class="fa c3">190,000</span></div>
+<div class="fr i1"><span>Trade receivables</span><span class="fa c3">47,800</span></div>
+<div class="fr i1"><span>Prepaid expenses</span><span class="fa c3">16,000</span></div>
+<div class="fr i1"><span>Bank</span><span class="fa c3">30,000</span></div>
+<div class="fr st"><span></span><span class="fa c3">283,800</span></div>
+<div class="fr dl"><span><strong>Total assets</strong></span><span class="fa c3"><strong>424,600</strong></span></div>
+<div class="fhd">CAPITAL AND LIABILITIES</div>
+<div class="fr i1"><span>Capital — 1 Apr 2023</span><span class="fa c2">300,000</span></div>
+<div class="fr i1"><span>+ Net profit</span><span class="fa c2">101,800</span></div>
+<div class="fr i1"><span>− Drawings</span><span class="fa c2">(40,000)</span></div>
+<div class="fr st"><span></span><span class="fa c3">361,800</span></div>
+<div class="fr i1"><span>Trade payables</span><span class="fa c2">50,800</span></div>
+<div class="fr i1"><span>Accrued expenses</span><span class="fa c2">12,000</span></div>
+<div class="fr st"><span></span><span class="fa c3">62,800</span></div>
+<div class="fr dl"><span><strong>Total C&L</strong></span><span class="fa c3"><strong>424,600</strong></span></div>
+</div></div>
+<p style="font-size:.84rem;color:var(--g500);margin-top:8px">
+<strong>W: OE Acc dep</strong> = TB $30,000 − disposed $8,000 + this year $26,000 = <strong>$48,000</strong></p>
+</div></div>
+
+<div class="kc"><div class="tg">SFP Rule for Disposal</div>
+<p>When an asset is disposed and removed from books:<br>
+<strong>Cost on SFP</strong> = TB cost − disposed cost<br>
+<strong>Acc dep on SFP</strong> = TB AD − disposed AD + this year's dep</p>
+</div>
+
+<hr class="sep">
+
+<h3>🏆 Final Challenge</h3>
+<div class="cq"><div class="ql">🔢 Challenge</div>
+<p>Machine cost $80,000. Bought 1 Jan 2019. 25% SL on cost. No residual. Sold 1 Jul 2022 for $30,000. Pro-rata dep in year of disposal. <strong>What is the loss on disposal?</strong></p>
+<p style="font-size:.82rem;color:var(--g500)">AD = $80K×25%×3.5 yrs = $70,000. NBV = $10,000. Proceeds = $30,000.</p>
+<div class="ci"><span>$</span><input type="number" id="c17a"><button onclick="calc('c17a',0,'profit')">Check</button></div>
+<div class="cf" id="c17a-f"></div></div>
+
+<div class="cq"><div class="ql">🔢 Challenge 2</div>
+<p>Using the same question above — it's actually a PROFIT. <strong>What is the profit on disposal?</strong></p>
+<div class="ci"><span>$</span><input type="number" id="c17b"><button onclick="calc('c17b',20000)">Check</button></div>
+<div class="cf" id="c17b-f"></div></div>
+
+<div class="cd nv" style="margin-top:32px">
+<h4 style="color:var(--o400);border:none;padding:0;margin-top:0">🎉 Congratulations!</h4>
+<p style="color:#fff;margin:0">You've completed the <strong style="color:var(--o400)">Ultimate Depreciation Guide</strong>. You now understand:</p>
+<ul style="color:rgba(255,255,255,.8)">
+<li>NCAs and how to determine their cost</li>
+<li>Capital vs revenue expenditure</li>
+<li>All three depreciation methods</li>
+<li>Time apportionment and special cases</li>
+<li>Double entry, ledger accounts, and financial statements</li>
+<li>Improvements to existing NCAs</li>
+<li>Disposal and trade-in disposal</li>
+</ul>
+<p style="color:var(--o300);margin:0">Go crush that HKDSE! 🚀</p>
+</div>
+</section>
+
+</div><!-- /mn -->
+
+<script>
+// ========== SIDEBAR ==========
+function toggleSide(){
+  document.getElementById('side').classList.toggle('open');
+}
+
+// Close sidebar on link click (mobile)
+document.querySelectorAll('.side a').forEach(function(a){
+  a.addEventListener('click',function(){
+    if(window.innerWidth<=900) document.getElementById('side').classList.remove('open');
+  });
+});
+
+// ========== PROGRESS BAR ==========
+window.addEventListener('scroll',function(){
+  var h=document.documentElement;
+  var pct=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
+  document.getElementById('prog').style.width=pct+'%';
+
+  // Active nav link
+  var secs=document.querySelectorAll('.sec');
+  var links=document.querySelectorAll('.side a');
+  var cur='';
+  secs.forEach(function(s){
+    if(s.getBoundingClientRect().top<=100) cur=s.id;
+  });
+  links.forEach(function(l){
+    l.classList.remove('on');
+    if(l.getAttribute('href')==='#'+cur) l.classList.add('on');
+  });
+});
+
+// ========== MULTIPLE CHOICE QUIZ ==========
+function quiz(btn,id,correct){
+  var box=document.getElementById(id);
+  var fb=document.getElementById(id+'-f');
+  var btns=box.querySelectorAll('.qb');
+
+  btns.forEach(function(b){b.disabled=true;});
+
+  if(correct){
+    btn.classList.add('ok');
+    fb.className='qf s okf';
+    fb.textContent='✅ Correct!';
+  } else {
+    btn.classList.add('no');
+    fb.className='qf s nof';
+    fb.textContent='❌ Not quite. Try to think about why!';
+    // Highlight correct
+    btns.forEach(function(b){
+      if(b!==btn) b.classList.add('ok');
+    });
+  }
+}
+
+// ========== CALCULATION QUIZ ==========
+function calc(inputId,answer,note){
+  var input=document.getElementById(inputId);
+  var fb=document.getElementById(inputId+'-f');
+  var val=parseFloat(input.value);
+
+  if(isNaN(val)){
+    fb.className='cf s no';
+    fb.textContent='Please enter a number.';
+    return;
+  }
+
+  if(Math.abs(val-answer)<0.5){
+    fb.className='cf s ok';
+    fb.textContent='✅ Correct! $'+answer.toLocaleString();
+    input.style.borderColor='var(--green)';
+  } else {
+    fb.className='cf s no';
+    fb.textContent='❌ Not quite. The answer is $'+answer.toLocaleString()+'. Review the section above!';
+    input.style.borderColor='var(--red)';
+  }
+}
+
+// ========== REVEAL ==========
+function reveal(id){
+  var el=document.getElementById(id);
+  el.classList.toggle('s');
+  // Change button text
+  var btn=el.previousElementSibling;
+  if(el.classList.contains('s')){
+    btn.textContent='🙈 Hide';
+  } else {
+    btn.textContent='👁 Show';
+  }
+}
+</script>
+</body>
+</html>
